@@ -667,11 +667,15 @@ public class ClientEngine extends Applet implements Runnable, ActionListener, Mo
 		if (i == KeyEvent.VK_F1) {
 			Client.setTab(3);
 		} else if (i == KeyEvent.VK_ESCAPE) {
-			Client.setTab(10);
+			Client.setTab(14);
 		} else if (i == KeyEvent.VK_F2) {
 			Client.setTab(4);
 		} else if (i == KeyEvent.VK_F3) {
 			Client.setTab(5);
+		} else if (i == KeyEvent.VK_F8) {
+			Client.setTab(8);
+		} else if (i == KeyEvent.VK_F9) {
+			Client.setTab(10);
 		} else if (i == KeyEvent.VK_F4) {
 			Client.setTab(6);
 		} else if (i == KeyEvent.VK_F5) {
