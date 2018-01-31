@@ -46,7 +46,7 @@ public class Entity extends Animable {
 				hitmarkMove[i1] = 5;
 				hitmarkTrans[i1] = 230;
 				hitArray[i1] = Configuration.enable10xDamage ? damage * 10 : damage;
-  				if(damage > 0 && Configuration.enable10xDamage) {
+				if (damage > 0 && Configuration.enable10xDamage) {
 					hitArray[i1] += new java.util.Random().nextInt(9);
 				}
 				hitMarkTypes[i1] = markType;

@@ -6,9 +6,8 @@ import java.util.zip.GZIPInputStream;
 public class SpriteLoader {
 
 	/**
-	 * Loads the sprite data and index files from the cache location. This can
-	 * be edited to use an archive such as config or media to load from the
-	 * cache.
+	 * Loads the sprite data and index files from the cache location. This can be
+	 * edited to use an archive such as config or media to load from the cache.
 	 * 
 	 * @param archive
 	 */
@@ -16,7 +15,8 @@ public class SpriteLoader {
 		try {
 			Stream index = new Stream(FileUtility.readFile(Signlink.findcachedir() + "sprites.idx"));
 			Stream data = new Stream(FileUtility.readFile(Signlink.findcachedir() + "sprites.dat"));
-			DataInputStream indexFile = new DataInputStream(new GZIPInputStream(new ByteArrayInputStream(index.buffer)));
+			DataInputStream indexFile = new DataInputStream(
+					new GZIPInputStream(new ByteArrayInputStream(index.buffer)));
 			DataInputStream dataFile = new DataInputStream(new GZIPInputStream(new ByteArrayInputStream(data.buffer)));
 			int totalSprites = indexFile.readInt();
 			System.out.println("Sprites Loaded: " + totalSprites);

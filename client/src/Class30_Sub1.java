@@ -2,11 +2,9 @@
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 
-
 final class Class30_Sub1 extends Node {
 
-	Class30_Sub1()
-	{
+	Class30_Sub1() {
 		anInt1294 = -1;
 	}
 

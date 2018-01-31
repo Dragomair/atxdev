@@ -34,22 +34,23 @@ public final class Signlink implements Runnable {
 		while (!active) {
 			try {
 				Thread.sleep(50L);
-			} catch (Exception _ex) { }
+			} catch (Exception _ex) {
+			}
 		}
 	}
 
 	public void run() {
-        active = true;
-        String s = findcachedir();
-        uid = getuid(s);
-        try {
-            cache_dat = new RandomAccessFile(s + "main_file_cache.dat", "rw");
-            for(int j = 0; j < 5; j++) {
-                cache_idx[j] = new RandomAccessFile(s + "main_file_cache.idx" + j, "rw");
+		active = true;
+		String s = findcachedir();
+		uid = getuid(s);
+		try {
+			cache_dat = new RandomAccessFile(s + "main_file_cache.dat", "rw");
+			for (int j = 0; j < 5; j++) {
+				cache_idx[j] = new RandomAccessFile(s + "main_file_cache.idx" + j, "rw");
 			}
-        } catch(Exception exception) {
-            exception.printStackTrace();
-        }
+		} catch (Exception exception) {
+			exception.printStackTrace();
+		}
 		for (int i = threadliveid; threadliveid == i;) {
 			if (socketreq != 0) {
 				try {
@@ -103,7 +104,6 @@ public final class Signlink implements Runnable {
 		}
 	}
 
-	
 	public static String findcachedir() {
 		File file = new File(System.getProperty("user.home") + "/atarx_cache/");
 		if (!file.exists()) {
@@ -111,9 +111,9 @@ public final class Signlink implements Runnable {
 				return secondDir();
 		}
 		return System.getProperty("user.home") + "/atarx_cache/";
-		//return "./Cache/";
-    }
-	
+		// return "./Cache/";
+	}
+
 	public static String secondDir() {
 		File file = new File("c:/atarx_cache/");
 		if (!file.exists())
@@ -129,7 +129,8 @@ public final class Signlink implements Runnable {
 				dataoutputstream.writeInt((int) (Math.random() * 99999999D));
 				dataoutputstream.close();
 			}
-		} catch (Exception _ex) { }
+		} catch (Exception _ex) {
+		}
 		try {
 			DataInputStream datainputstream = new DataInputStream(new FileInputStream(s + "uid.dat"));
 			int i = datainputstream.readInt();

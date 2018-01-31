@@ -31,7 +31,8 @@ public final class Stream extends NodeSub {
 
 	final int v(int i) {
 		currentOffset += 3;
-		return (0xff & buffer[currentOffset - 3] << 16) + (0xff & buffer[currentOffset - 2] << 8) + (0xff & buffer[currentOffset - 1]);
+		return (0xff & buffer[currentOffset - 3] << 16) + (0xff & buffer[currentOffset - 2] << 8)
+				+ (0xff & buffer[currentOffset - 1]);
 	}
 
 	private Stream() {
@@ -41,7 +42,7 @@ public final class Stream extends NodeSub {
 		buffer = abyte0;
 		currentOffset = 0;
 	}
-	
+
 	public int readUSmart2() {
 		int baseVal = 0;
 		int lastVal = 0;
@@ -50,7 +51,7 @@ public final class Stream extends NodeSub {
 		}
 		return baseVal + lastVal;
 	}
-	
+
 	public String readNewString() {
 		int i = currentOffset;
 		while (buffer[currentOffset++] != 0)
@@ -152,12 +153,14 @@ public final class Stream extends NodeSub {
 
 	public int read3Bytes() {
 		currentOffset += 3;
-		return ((buffer[currentOffset - 3] & 0xff) << 16) + ((buffer[currentOffset - 2] & 0xff) << 8) + (buffer[currentOffset - 1] & 0xff);
+		return ((buffer[currentOffset - 3] & 0xff) << 16) + ((buffer[currentOffset - 2] & 0xff) << 8)
+				+ (buffer[currentOffset - 1] & 0xff);
 	}
 
 	public int readDWord() {
 		currentOffset += 4;
-		return ((buffer[currentOffset - 4] & 0xff) << 24) + ((buffer[currentOffset - 3] & 0xff) << 16) + ((buffer[currentOffset - 2] & 0xff) << 8) + (buffer[currentOffset - 1] & 0xff);
+		return ((buffer[currentOffset - 4] & 0xff) << 24) + ((buffer[currentOffset - 3] & 0xff) << 16)
+				+ ((buffer[currentOffset - 2] & 0xff) << 8) + (buffer[currentOffset - 1] & 0xff);
 	}
 
 	public long readQWord() {
@@ -175,7 +178,8 @@ public final class Stream extends NodeSub {
 
 	public byte[] readBytes() {
 		int i = currentOffset;
-		while (buffer[currentOffset++] != 10);
+		while (buffer[currentOffset++] != 10)
+			;
 		byte abyte0[] = new byte[currentOffset - i - 1];
 		System.arraycopy(buffer, i, abyte0, i - i, currentOffset - 1 - i);
 		return abyte0;
@@ -315,12 +319,14 @@ public final class Stream extends NodeSub {
 
 	public int method439() {
 		currentOffset += 4;
-		return ((buffer[currentOffset - 2] & 0xff) << 24) + ((buffer[currentOffset - 1] & 0xff) << 16) + ((buffer[currentOffset - 4] & 0xff) << 8) + (buffer[currentOffset - 3] & 0xff);
+		return ((buffer[currentOffset - 2] & 0xff) << 24) + ((buffer[currentOffset - 1] & 0xff) << 16)
+				+ ((buffer[currentOffset - 4] & 0xff) << 8) + (buffer[currentOffset - 3] & 0xff);
 	}
 
 	public int method440() {
 		currentOffset += 4;
-		return ((buffer[currentOffset - 3] & 0xff) << 24) + ((buffer[currentOffset - 4] & 0xff) << 16) + ((buffer[currentOffset - 1] & 0xff) << 8) + (buffer[currentOffset - 2] & 0xff);
+		return ((buffer[currentOffset - 3] & 0xff) << 24) + ((buffer[currentOffset - 4] & 0xff) << 16)
+				+ ((buffer[currentOffset - 1] & 0xff) << 8) + (buffer[currentOffset - 2] & 0xff);
 	}
 
 	public void method441(int i, byte abyte0[], int j) {
@@ -338,7 +344,9 @@ public final class Stream extends NodeSub {
 	public byte buffer[];
 	public int currentOffset;
 	public int bitPosition;
-	private static final int[] anIntArray1409 = { 0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, 65535, 0x1ffff, 0x3ffff, 0x7ffff, 0xfffff, 0x1fffff, 0x3fffff, 0x7fffff, 0xffffff, 0x1ffffff, 0x3ffffff, 0x7ffffff, 0xfffffff, 0x1fffffff, 0x3fffffff, 0x7fffffff, -1 };
+	private static final int[] anIntArray1409 = { 0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383,
+			32767, 65535, 0x1ffff, 0x3ffff, 0x7ffff, 0xfffff, 0x1fffff, 0x3fffff, 0x7fffff, 0xffffff, 0x1ffffff,
+			0x3ffffff, 0x7ffffff, 0xfffffff, 0x1fffffff, 0x3fffffff, 0x7fffffff, -1 };
 	public ISAACRandomGen encryption;
 	private static int anInt1412;
 	private static final NodeList nodeList = new NodeList();

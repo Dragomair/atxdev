@@ -2,12 +2,9 @@
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 
+final class Class32 {
 
-final class Class32
-{
-
-	Class32()
-	{
+	Class32() {
 		anIntArray583 = new int[256];
 		anIntArray585 = new int[257];
 		aBooleanArray589 = new boolean[256];
@@ -24,7 +21,7 @@ final class Class32
 		anIntArray600 = new int[6];
 	}
 
-  byte aByteArray563[];
+	byte aByteArray563[];
 	int anInt564;
 	int anInt565;
 	int anInt566;

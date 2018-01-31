@@ -151,14 +151,14 @@ public final class EntityDef {
 		case 1536:
 			entityDef.name = "Dark crab";
 			break;
-			
+
 		case 1103:
 			entityDef.actions = new String[5];
 			entityDef.name = "Game Instructor";
 			entityDef.actions[0] = "Talk-to";
 			entityDef.actions[3] = "Open Store";
 			break;
-			
+
 		case 13178:
 		case 495:
 		case 5907:
@@ -167,58 +167,58 @@ public final class EntityDef {
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Pick-up";
 			break;
-			
+
 		case 3680:
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Travel";
 			break;
-			
+
 		case 3231:
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Tan";
 			break;
-			
+
 		case 394:
 		case 2182:
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Bank";
 			break;
-			
+
 		case 311:
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Talk-to";
 			break;
-			
+
 		case 3951:
 			entityDef.name = "Ataratix Guard";
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Talk-to";
 			break;
-			
+
 		case 6749:
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Talk-to";
 			break;
-			
+
 		case 1325:
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Talk-to";
 			entityDef.actions[3] = "Open Drop Tables";
 			break;
-			
+
 		case 5527:
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Talk-to";
 			entityDef.actions[1] = "Trade";
 			break;
-			
+
 		case 6524:
 			entityDef.name = "Decantor";
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Talk-to";
 			entityDef.actions[3] = "Decant";
 			break;
-			
+
 		case 5523:
 			entityDef.name = "Membership";
 			entityDef.actions = new String[5];
@@ -226,7 +226,7 @@ public final class EntityDef {
 			entityDef.actions[1] = "Trade";
 			entityDef.actions[3] = "Teleport";
 			break;
-			
+
 		case 1603:
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Talk-to";
@@ -333,7 +333,7 @@ public final class EntityDef {
 			entityDef.anInt86 = 70;
 			entityDef.anInt91 = 70;
 			break;
-			
+
 		case 4010:
 			entityDef.name = "Tzrek-jad";
 			entityDef.actions = new String[5];
@@ -344,7 +344,7 @@ public final class EntityDef {
 			entityDef.anInt86 = 25;
 			entityDef.anInt91 = 25;
 			break;
-			
+
 		case 963:
 			entityDef.anIntArray94 = new int[] { 24602, 24605, 24606 };
 			entityDef.walkAnim = 6236;
@@ -352,7 +352,7 @@ public final class EntityDef {
 			entityDef.anInt86 = 128;
 			entityDef.anInt91 = 128;
 			break;
-			
+
 		case 964:
 			entityDef.anIntArray94 = new int[] { 24597, 24598 };
 			entityDef.walkAnim = 6238;
@@ -360,12 +360,12 @@ public final class EntityDef {
 			entityDef.anInt86 = 128;
 			entityDef.anInt91 = 128;
 			break;
-			
+
 		case 5547:
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Pick-up";
 			break;
-			
+
 		case 5559:
 		case 5560:
 		case 6637:
@@ -374,7 +374,7 @@ public final class EntityDef {
 			entityDef.actions[0] = "Pick-up";
 			entityDef.actions[1] = "Metamorphosis";
 			break;
-			
+
 		case 2130:
 		case 2131:
 		case 2132:
@@ -382,7 +382,7 @@ public final class EntityDef {
 			entityDef.actions[0] = "Pick-up";
 			entityDef.actions[1] = "Metamorphosis";
 			break;
-			
+
 		case 5860:// Big Mo
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Talk-to";
@@ -394,7 +394,7 @@ public final class EntityDef {
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Store";
 			break;
-			
+
 		case 6525:// Decantor
 			entityDef.name = "Decantor";
 			entityDef.actions = new String[5];
@@ -424,7 +424,7 @@ public final class EntityDef {
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Talk-to";
 			break;
-			
+
 		case 606:// Prestige
 			entityDef.actions = new String[5];
 			entityDef.actions[0] = "Talk-to";
@@ -601,69 +601,69 @@ public final class EntityDef {
 		boolean dump = false;
 		if (dump) {
 			try {
-				FileWriter fw = new FileWriter(System.getProperty("user.home")+"/Desktop/NPC Dump.txt");
-				for(int id = 0; id < totalNPCs; id++) {
+				FileWriter fw = new FileWriter(System.getProperty("user.home") + "/Desktop/NPC Dump.txt");
+				for (int id = 0; id < totalNPCs; id++) {
 					EntityDef ed = EntityDef.forID(id);
-					fw.write("case "+id+":");
+					fw.write("case " + id + ":");
 					fw.write(System.getProperty("line.separator"));
-					fw.write("entityDef.name = \""+ed.name+"\";");
+					fw.write("entityDef.name = \"" + ed.name + "\";");
 					fw.write(System.getProperty("line.separator"));
-					fw.write("entityDef.description = \""+ed.description+"\";");
+					fw.write("entityDef.description = \"" + ed.description + "\";");
 					fw.write(System.getProperty("line.separator"));
-					fw.write("entityDef.combatLevel = "+ed.combatLevel+";");
+					fw.write("entityDef.combatLevel = " + ed.combatLevel + ";");
 					fw.write(System.getProperty("line.separator"));
-					fw.write("entityDef.walkAnim = "+ed.walkAnim+";");
+					fw.write("entityDef.walkAnim = " + ed.walkAnim + ";");
 					fw.write(System.getProperty("line.separator"));
-					fw.write("entityDef.standAnim = "+ed.standAnim+";");
+					fw.write("entityDef.standAnim = " + ed.standAnim + ";");
 					fw.write(System.getProperty("line.separator"));
-					if(ed.actions != null) {
-						fw.write("entityDef.actions = new String["+ed.actions.length+"];");
+					if (ed.actions != null) {
+						fw.write("entityDef.actions = new String[" + ed.actions.length + "];");
 						fw.write(System.getProperty("line.separator"));
-						for(int range = 0; range < ed.actions.length; range++) {
-							if(ed.actions[range] != null) {
-								fw.write("entityDef.actions["+range+"] = \""+ed.actions[range]+"\";");
+						for (int range = 0; range < ed.actions.length; range++) {
+							if (ed.actions[range] != null) {
+								fw.write("entityDef.actions[" + range + "] = \"" + ed.actions[range] + "\";");
 								fw.write(System.getProperty("line.separator"));
 							}
 						}
 					}
-					if(ed.anIntArray94 != null) { 
-						fw.write("entityDef.models = new int["+ed.anIntArray94.length+"];");
+					if (ed.anIntArray94 != null) {
+						fw.write("entityDef.models = new int[" + ed.anIntArray94.length + "];");
 						fw.write(System.getProperty("line.separator"));
-						for(int range = 0; range < ed.anIntArray94.length; range++) {
-							fw.write("entityDef.models["+range+"] = "+ed.anIntArray94[range]+";");
+						for (int range = 0; range < ed.anIntArray94.length; range++) {
+							fw.write("entityDef.models[" + range + "] = " + ed.anIntArray94[range] + ";");
 							fw.write(System.getProperty("line.separator"));
 						}
 					}
-					if(ed.anIntArray76 != null) {
-						fw.write("entityDef.originalModelColors = new int["+ed.anIntArray76.length+"];");
+					if (ed.anIntArray76 != null) {
+						fw.write("entityDef.originalModelColors = new int[" + ed.anIntArray76.length + "];");
 						fw.write(System.getProperty("line.separator"));
-						for(int range = 0; range < ed.anIntArray76.length; range++) {
-							fw.write("entityDef.originalModelColors["+range+"] = "+ed.anIntArray76[range]+";");
+						for (int range = 0; range < ed.anIntArray76.length; range++) {
+							fw.write("entityDef.originalModelColors[" + range + "] = " + ed.anIntArray76[range] + ";");
 							fw.write(System.getProperty("line.separator"));
 						}
 					}
-					if(ed.anIntArray70 != null) {
-						fw.write("entityDef.modifiedModelColors = new int["+ed.anIntArray70.length+"];");
+					if (ed.anIntArray70 != null) {
+						fw.write("entityDef.modifiedModelColors = new int[" + ed.anIntArray70.length + "];");
 						fw.write(System.getProperty("line.separator"));
-						for(int range = 0; range < ed.anIntArray70.length; range++) {
-							fw.write("entityDef.modifiedModelColors["+range+"] = "+ed.anIntArray70[range]+";");
+						for (int range = 0; range < ed.anIntArray70.length; range++) {
+							fw.write("entityDef.modifiedModelColors[" + range + "] = " + ed.anIntArray70[range] + ";");
 							fw.write(System.getProperty("line.separator"));
 						}
 					}
-					fw.write("entityDef.anInt91 = "+ed.anInt91+";");
+					fw.write("entityDef.anInt91 = " + ed.anInt91 + ";");
 					fw.write(System.getProperty("line.separator"));
-					fw.write("entityDef.anInt86 = "+ed.anInt86+";");
+					fw.write("entityDef.anInt86 = " + ed.anInt86 + ";");
 					fw.write(System.getProperty("line.separator"));
-					fw.write("entityDef.aByte68 = "+ed.aByte68+";");
+					fw.write("entityDef.aByte68 = " + ed.aByte68 + ";");
 					fw.write(System.getProperty("line.separator"));
-					fw.write("break;"); 
+					fw.write("break;");
 					fw.write(System.getProperty("line.separator"));
 					fw.write(System.getProperty("line.separator"));
 				}
 				fw.close();
 				System.out.println("NPC Dump Finished.");
-				System.out.println("Total NPCs: "+totalNPCs);
-			} catch(Exception e) {
+				System.out.println("Total NPCs: " + totalNPCs);
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
@@ -676,63 +676,62 @@ public final class EntityDef {
 		stream = null;
 	}
 
-	 public Model method164(int j, int currAnim, int nextAnim, int currCycle, int nextCycle, int ai[]) {
-	        if (childrenIDs != null) {
-	            final EntityDef type = method161();
-	            if (type == null) {
-	                return null;
-	            } else {
-	                return type.method164(j, currAnim, ai);
-	            }
-	        }
-	        Model model = (Model) mruNodes.insertFromCache(interfaceType);
-	        if (model == null) {
-	            boolean flag = false;
-	            for (int i1 = 0; i1 < anIntArray94.length; i1++) {
-	                if (!Model.method463(anIntArray94[i1])) {
-	                    flag = true;
-	                }
-	            }
-	            if (flag) {
-	                return null;
-	            }
-	            final Model[] parts = new Model[anIntArray94.length];
-	            for (int j1 = 0; j1 < anIntArray94.length; j1++) {
-	                parts[j1] = Model.method462(anIntArray94[j1]);
-	            }
-	            if (parts.length == 1) {
-	                model = parts[0];
-	            } else {
-	                model = new Model(parts.length, parts);
-	            }
-	            if(anIntArray70 != null)
-				{
-					for(int k1 = 0; k1 < anIntArray70.length; k1++)
-						model.method476(anIntArray70[k1], anIntArray76[k1]);
-
-				}
-	            model.method469();
-	            model.method479(64 + anInt85, 1500 + anInt92, -30, -50, -30, true);
-	            mruNodes.removeFromCache(model, interfaceType);
-	        }
-	        final Model model_1 = Model.aModel_1621;
-	        model_1.method464(model, SequenceFrame.method532(currAnim) & SequenceFrame.method532(j));
-	        if (currAnim != -1 && j != -1) {
-	            model_1.method478(anInt91, anInt91, anInt86);
-	        } else if (currAnim != -1) {
-	             model_1.interpolateFrames(currAnim, nextAnim, nextCycle, currCycle);
-	        }
-	        if (anInt91 != 128 || anInt86 != 128) {
-	            model_1.method478(anInt91, anInt86, anInt91);
-	        }
-	        model_1.method466();
-			model_1.anIntArrayArray1658 = null;
-			model_1.anIntArrayArray1657 = null;
-			if(aByte68 == 1)
-				model_1.aBoolean1659 = true;
-			return model_1;
+	public Model method164(int j, int currAnim, int nextAnim, int currCycle, int nextCycle, int ai[]) {
+		if (childrenIDs != null) {
+			final EntityDef type = method161();
+			if (type == null) {
+				return null;
+			} else {
+				return type.method164(j, currAnim, ai);
+			}
 		}
-	
+		Model model = (Model) mruNodes.insertFromCache(interfaceType);
+		if (model == null) {
+			boolean flag = false;
+			for (int i1 = 0; i1 < anIntArray94.length; i1++) {
+				if (!Model.method463(anIntArray94[i1])) {
+					flag = true;
+				}
+			}
+			if (flag) {
+				return null;
+			}
+			final Model[] parts = new Model[anIntArray94.length];
+			for (int j1 = 0; j1 < anIntArray94.length; j1++) {
+				parts[j1] = Model.method462(anIntArray94[j1]);
+			}
+			if (parts.length == 1) {
+				model = parts[0];
+			} else {
+				model = new Model(parts.length, parts);
+			}
+			if (anIntArray70 != null) {
+				for (int k1 = 0; k1 < anIntArray70.length; k1++)
+					model.method476(anIntArray70[k1], anIntArray76[k1]);
+
+			}
+			model.method469();
+			model.method479(64 + anInt85, 1500 + anInt92, -30, -50, -30, true);
+			mruNodes.removeFromCache(model, interfaceType);
+		}
+		final Model model_1 = Model.aModel_1621;
+		model_1.method464(model, SequenceFrame.method532(currAnim) & SequenceFrame.method532(j));
+		if (currAnim != -1 && j != -1) {
+			model_1.method478(anInt91, anInt91, anInt86);
+		} else if (currAnim != -1) {
+			model_1.interpolateFrames(currAnim, nextAnim, nextCycle, currCycle);
+		}
+		if (anInt91 != 128 || anInt86 != 128) {
+			model_1.method478(anInt91, anInt86, anInt91);
+		}
+		model_1.method466();
+		model_1.anIntArrayArray1658 = null;
+		model_1.anIntArrayArray1657 = null;
+		if (aByte68 == 1)
+			model_1.aBoolean1659 = true;
+		return model_1;
+	}
+
 	public Model method164(int j, int k, int ai[]) {
 		if (childrenIDs != null) {
 			EntityDef entityDef = method161();

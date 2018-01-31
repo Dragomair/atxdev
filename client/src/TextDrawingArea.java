@@ -1,3 +1,4 @@
+
 // Decompiled by Jad v1.5.8f. Copyright 2001 Pavel Kouznetsov.
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
@@ -111,7 +112,8 @@ public final class TextDrawingArea extends DrawingArea {
 		for (int i1 = 0; i1 < s.length(); i1++) {
 			char c = s.charAt(i1);
 			if (c != ' ')
-				method392(aByteArrayArray1491[c], l + anIntArray1494[c], j + anIntArray1495[c], anIntArray1492[c], anIntArray1493[c], i);
+				method392(aByteArrayArray1491[c], l + anIntArray1494[c], j + anIntArray1495[c], anIntArray1492[c],
+						anIntArray1493[c], i);
 			l += anIntArray1496[c];
 		}
 	}
@@ -124,7 +126,9 @@ public final class TextDrawingArea extends DrawingArea {
 		for (int i1 = 0; i1 < s.length(); i1++) {
 			char c = s.charAt(i1);
 			if (c != ' ')
-				method392(aByteArrayArray1491[c], j + anIntArray1494[c], l + anIntArray1495[c] + (int) (Math.sin((double) i1 / 2D + (double) k / 5D) * 5D), anIntArray1492[c], anIntArray1493[c], i);
+				method392(aByteArrayArray1491[c], j + anIntArray1494[c],
+						l + anIntArray1495[c] + (int) (Math.sin((double) i1 / 2D + (double) k / 5D) * 5D),
+						anIntArray1492[c], anIntArray1493[c], i);
 			j += anIntArray1496[c];
 		}
 	}
@@ -137,7 +141,10 @@ public final class TextDrawingArea extends DrawingArea {
 		for (int i1 = 0; i1 < s.length(); i1++) {
 			char c = s.charAt(i1);
 			if (c != ' ')
-				method392(aByteArrayArray1491[c], i + anIntArray1494[c] + (int) (Math.sin((double) i1 / 5D + (double) j / 5D) * 5D), k + anIntArray1495[c] + (int) (Math.sin((double) i1 / 3D + (double) j / 5D) * 5D), anIntArray1492[c], anIntArray1493[c], l);
+				method392(aByteArrayArray1491[c],
+						i + anIntArray1494[c] + (int) (Math.sin((double) i1 / 5D + (double) j / 5D) * 5D),
+						k + anIntArray1495[c] + (int) (Math.sin((double) i1 / 3D + (double) j / 5D) * 5D),
+						anIntArray1492[c], anIntArray1493[c], l);
 			i += anIntArray1496[c];
 		}
 	}
@@ -153,7 +160,9 @@ public final class TextDrawingArea extends DrawingArea {
 		for (int k1 = 0; k1 < s.length(); k1++) {
 			char c = s.charAt(k1);
 			if (c != ' ')
-				method392(aByteArrayArray1491[c], l + anIntArray1494[c], k + anIntArray1495[c] + (int) (Math.sin((double) k1 / 1.5D + (double) j) * d), anIntArray1492[c], anIntArray1493[c], i1);
+				method392(aByteArrayArray1491[c], l + anIntArray1494[c],
+						k + anIntArray1495[c] + (int) (Math.sin((double) k1 / 1.5D + (double) j) * d),
+						anIntArray1492[c], anIntArray1493[c], i1);
 			l += anIntArray1496[c];
 		}
 	}
@@ -174,8 +183,10 @@ public final class TextDrawingArea extends DrawingArea {
 				char c = s.charAt(i1);
 				if (c != ' ') {
 					if (flag1)
-						method392(aByteArrayArray1491[c], i + anIntArray1494[c] + 1, k + anIntArray1495[c] + 1, anIntArray1492[c], anIntArray1493[c], 0);
-					method392(aByteArrayArray1491[c], i + anIntArray1494[c], k + anIntArray1495[c], anIntArray1492[c], anIntArray1493[c], j);
+						method392(aByteArrayArray1491[c], i + anIntArray1494[c] + 1, k + anIntArray1495[c] + 1,
+								anIntArray1492[c], anIntArray1493[c], 0);
+					method392(aByteArrayArray1491[c], i + anIntArray1494[c], k + anIntArray1495[c], anIntArray1492[c],
+							anIntArray1493[c], j);
 				}
 				i += anIntArray1496[c];
 			}
@@ -198,8 +209,10 @@ public final class TextDrawingArea extends DrawingArea {
 			} else {
 				char c = s.charAt(k1);
 				if (c != ' ') {
-					method394(192, i + anIntArray1494[c] + 1, aByteArrayArray1491[c], anIntArray1492[c], i1 + anIntArray1495[c] + 1, anIntArray1493[c], 0);
-					method394(j1, i + anIntArray1494[c], aByteArrayArray1491[c], anIntArray1492[c], i1 + anIntArray1495[c], anIntArray1493[c], j);
+					method394(192, i + anIntArray1494[c] + 1, aByteArrayArray1491[c], anIntArray1492[c],
+							i1 + anIntArray1495[c] + 1, anIntArray1493[c], 0);
+					method394(j1, i + anIntArray1494[c], aByteArrayArray1491[c], anIntArray1492[c],
+							i1 + anIntArray1495[c], anIntArray1493[c], j);
 				}
 				i += anIntArray1496[c];
 				if ((aRandom1498.nextInt() & 3) == 0)
@@ -208,13 +221,13 @@ public final class TextDrawingArea extends DrawingArea {
 	}
 
 	private int getColorByName(String s) {
-		if (s.equals("mbl")) 
+		if (s.equals("mbl"))
 			return 0x359BBD;
 		if (s.equals("mye"))
 			return 0xE8E110;
 		if (s.equals("mre"))
 			return 0xD10F29;
-		
+
 		if (s.equals("369"))// color code, use as @###@
 			return 0x336699;// hex code
 		if (s.equals("mon"))
@@ -390,7 +403,8 @@ public final class TextDrawingArea extends DrawingArea {
 		for (int i1 = 0; i1 < s.length(); i1++) {
 			char c = s.charAt(i1);
 			if (c != ' ')
-				method392(aByteArrayArray1491[c], x + anIntArray1494[c], y + anIntArray1495[c], anIntArray1492[c], anIntArray1493[c], color);
+				method392(aByteArrayArray1491[c], x + anIntArray1494[c], y + anIntArray1495[c], anIntArray1492[c],
+						anIntArray1493[c], color);
 			x += anIntArray1496[c];
 		}
 	}

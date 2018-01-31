@@ -2,12 +2,9 @@
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 
+final class Class47 {
 
-final class Class47
-{
-
-	Class47()
-	{
+	Class47() {
 	}
 
 	int anInt787;

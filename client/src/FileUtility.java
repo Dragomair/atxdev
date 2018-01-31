@@ -115,8 +115,7 @@ public class FileUtility {
 		return null;
 	}
 
-	public static byte[] gZipCompress(byte[] data, int off, int len)
-		throws IOException {
+	public static byte[] gZipCompress(byte[] data, int off, int len) throws IOException {
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		GZIPOutputStream gzo = new GZIPOutputStream(bos);
 		try {

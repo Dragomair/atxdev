@@ -2,11 +2,9 @@
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 
-
 final class Object4 {
 
-	Object4()
-	{
+	Object4() {
 	}
 
 	int anInt45;

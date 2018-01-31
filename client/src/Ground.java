@@ -2,11 +2,9 @@
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 
-
 public final class Ground extends Node {
 
-	public Ground(int i, int j, int k)
-	{
+	public Ground(int i, int j, int k) {
 		obj5Array = new Object5[5];
 		anIntArray1319 = new int[5];
 		anInt1310 = anInt1307 = i;

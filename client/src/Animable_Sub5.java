@@ -1,5 +1,5 @@
 public final class Animable_Sub5 extends Animable {
-	
+
 	private int anInt1599;
 	private final int[] anIntArray1600;
 	private final int anInt1601;

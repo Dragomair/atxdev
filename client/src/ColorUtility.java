@@ -1,13 +1,13 @@
 import java.awt.Color;
 
 public class ColorUtility {
-	
+
 	public static int fadeStep = 1;
 	public static int fadingToColor;
 	public static boolean switchColor = false;
-	
+
 	private static float hue = 0.0f, sat = 1.0f, bri = 1.0f;
-		
+
 	public static int getHexColors() {
 		hue += 0.0005;
 		Color base = new Color(Color.HSBtoRGB(hue, sat, bri));

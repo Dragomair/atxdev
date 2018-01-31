@@ -1,8 +1,8 @@
 public final class Class18 {
 
-    public final int[] anIntArray342;
-    public final int[][] anIntArrayArray343;
-    public final int length;
+	public final int[] anIntArray342;
+	public final int[][] anIntArrayArray343;
+	public final int length;
 
 	public Class18(Stream buffer) {
 		length = buffer.readUnsignedWord();

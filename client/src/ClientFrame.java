@@ -13,6 +13,7 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 /**
  * Handles the Client Frame
+ * 
  * @author Ataratix
  *
  */
@@ -28,19 +29,19 @@ public final class ClientFrame extends JFrame {
 
 	public ClientFrame(ClientEngine applet, int width, int height, boolean resizable, boolean fullscreen) {
 		this.applet = applet;
-		
-		//setTheme();
+
+		// setTheme();
 		setLogo();
-		
+
 		setTitle((Configuration.economyWorld ? "Ataratix" : "Ataratix PK"));
 		setResizable(resizable);
 		setUndecorated(fullscreen);
-		setVisible(true); 
+		setVisible(true);
 		insets = getInsets();
 		if (resizable) {
 			setMinimumSize(new Dimension(766 + insets.left + insets.right, 555 + insets.top + insets.bottom));
 		}
-		
+
 		isFocused();
 		setFocusTraversalKeysEnabled(false);
 		setSize(width + insets.left + insets.right, height + insets.top + insets.bottom);
@@ -49,34 +50,37 @@ public final class ClientFrame extends JFrame {
 		requestFocus();
 		toFront();
 	}
-	
-	private void setLogo() {		
+
+	private void setLogo() {
 		URL url2 = null;
-        boolean update = true;
-        try {
-            url2 = new URL("http://www.ataratix.com/downloads/ico.png");
-        } catch (MalformedURLException ex) {
-            update = false;
-            ex.printStackTrace();
-        }
-        if (update) {
-            Image bimg = Toolkit.getDefaultToolkit().getImage(url2);
-            this.setIconImage(bimg);
-        }		
+		boolean update = true;
+		try {
+			url2 = new URL("http://www.ataratix.com/downloads/ico.png");
+		} catch (MalformedURLException ex) {
+			update = false;
+			ex.printStackTrace();
+		}
+		if (update) {
+			Image bimg = Toolkit.getDefaultToolkit().getImage(url2);
+			this.setIconImage(bimg);
+		}
 	}
-	
+
 	public void setTheme() {
 		try {
-			//UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-			/*org.jvnet.substance.skin.SubstanceRavenGraphiteLookAndFeel lookAndFeel = new org.jvnet.substance.skin.SubstanceRavenGraphiteLookAndFeel();
-			UIManager.setLookAndFeel(lookAndFeel);
-			SubstanceLookAndFeel.setCurrentWatermark(new SubstanceNoneWatermark());
-			JDialog.setDefaultLookAndFeelDecorated(true);
-			System.out.println("22");*/
+			// UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+			/*
+			 * org.jvnet.substance.skin.SubstanceRavenGraphiteLookAndFeel lookAndFeel = new
+			 * org.jvnet.substance.skin.SubstanceRavenGraphiteLookAndFeel();
+			 * UIManager.setLookAndFeel(lookAndFeel);
+			 * SubstanceLookAndFeel.setCurrentWatermark(new SubstanceNoneWatermark());
+			 * JDialog.setDefaultLookAndFeelDecorated(true); System.out.println("22");
+			 */
 		} catch (Exception e2) {
 			try {
 				UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+					| UnsupportedLookAndFeelException e) {
 				e.printStackTrace();
 			}
 		}

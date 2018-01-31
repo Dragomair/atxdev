@@ -12,15 +12,14 @@ public class CustomInterfaces extends RSInterface {
 	 * @param Ataratix
 	 */
 	public static void unpackInterfaces(TextDrawingArea[] Ataratix) {
-		
+
 		/*
 		 * Godwars interface
 		 */
 		godWars(Ataratix);
 
 		/*
-		 * The quest tab interface (Handles important information of server &
-		 * player)
+		 * The quest tab interface (Handles important information of server & player)
 		 */
 
 		questTab(Ataratix);
@@ -93,73 +92,73 @@ public class CustomInterfaces extends RSInterface {
 		 */
 		bank(Ataratix);
 		bankSettings(Ataratix);
-		
+
 		/*
-		 * Handles price checking item(s) prices 
+		 * Handles price checking item(s) prices
 		 */
 		priceChecker(Ataratix);
-		
+
 		/*
 		 * Handles displaying progression of barrows minigame
 		 */
 		barrows(Ataratix);
-		
+
 		/*
 		 * Handles reseting a player's statistic
 		 */
 		genie(Ataratix);
-		
-		/* 
+
+		/*
 		 * Handles the random event - Mystery Box
 		 */
 		mysteryBox(Ataratix);
-		
+
 		/*
 		 * Handles the monster guide
 		 */
 		dropTable(Ataratix);
-		
+
 		/**
 		 * Handles an item details
 		 */
 		itemDetails(Ataratix);
-		
+
 		/*
 		 * Handles changing private messages
 		 */
 		chatColor(Ataratix);
-		
+
 		/*
 		 * Handles changing the setting of how EXP counter will be displayed
 		 */
 		expCounter(Ataratix);
-		
+
 		/*
 		 * Handles adding friends
 		 */
 		friendsTab(Ataratix);
-		
+
 		/*
 		 * Handles ignoring faggots
 		 */
 		ignoreTab(Ataratix);
-		
+
 		/*
 		 * Handles prestiging
 		 */
 		prestige(Ataratix);
-		
+
 		/*
 		 * Handles displaying information on Warrior Guild minigame
 		 */
 		warriorGuild(Ataratix);
-		
+
 		/*
 		 * Handles displaying information on the Pest Control minigame
 		 */
 		pestControlBoat(Ataratix);
 		pestControlGame(Ataratix);
-		
+
 		/*
 		 * Handles Player Profiler interface
 		 */
@@ -167,129 +166,128 @@ public class CustomInterfaces extends RSInterface {
 		myProfile(Ataratix);
 		profileTab(Ataratix);
 		profileLeaderboards(Ataratix);
-		
+
 		/*
 		 * Shows list of tracked statistics for a player
 		 */
 		tracker(Ataratix);
-		
+
 		/**
 		 * Loyalty title
 		 */
 		loyaltyShop(Ataratix);
-		
+
 		/**
 		 * Quest interface
 		 */
 		questInterface(Ataratix);
-		
+
 		/**
 		 * Handles the fire colors
 		 */
 		fireColor(Ataratix);
 
 		/*
-		 * The clan chat interface & tab (Handles all the main functions of clan
-		 * chat)
+		 * The clan chat interface & tab (Handles all the main functions of clan chat)
 		 */
 		clanChatTab(Ataratix);
 		clanChatSetup(Ataratix);
-		
+
 		/*
 		 * In PvP interface
 		 */
 		inPvP(Ataratix);
-		
+
 		/*
 		 * In safe interface
 		 */
 		inSafe(Ataratix);
-		
-		/* 
+
+		/*
 		 * In timer interface
 		 */
 		inTimer(Ataratix);
-		
+
 		/*
 		 * PK skilltab
 		 */
 		PKSkillTab(Ataratix);
-		
+
 		/*
 		 * Spawn tab
 		 */
 		spawnTab(Ataratix);
-		
+
 		/*
 		 * Starter interface
 		 */
 		starter(Ataratix);
-		
+
 		/**
 		 * Tab Creation
 		 */
 		tabCreation(Ataratix);
-		
+
 		/**
 		 * Report Abuse
 		 */
 		reportAbuse(Ataratix);
-		
+
 		/**
 		 * Bolt enchanting
 		 */
 		boltEnchanting(Ataratix);
-		
+
 		/**
 		 * Weapon Game
 		 */
 		weaponLobby(Ataratix);
 		weaponGame(Ataratix);
 		weaponStore(Ataratix);
-		
+
 		/**
 		 * Bank Pins Management
 		 */
 		bankPinManager(Ataratix);
-		
+
 		/**
 		 * Account Manager
 		 */
 		accountManager(Ataratix);
-		
+
 		/**
 		 * Bank Pin
 		 */
 		bankPin(Ataratix);
-		
+
 		/**
 		 * Ticket Interface
 		 */
 		ticketInterface(Ataratix);
-		
+
 		/**
 		 * Staff Tab
 		 */
 		staffTab(Ataratix);
 	}
-	
+
 	public static void screenOptions(TextDrawingArea[] ataratix) {
 		RSInterface tab = addInterface(28200);
 		addSprite(28201, 472);
 		addText(28202, "Screen Options", ataratix, 2, 0xff9933, true, true);
 		addHoverButton(28203, 17, 21, 21, "Close", 250, 28204, 3);
-		addHoveredButton(28204, 18, 21, 21, 28205);				
+		addHoveredButton(28204, 18, 21, 21, 28205);
 		addButton(28206, 470, "Transparent side panel");
 		addButton(28207, 468, "Transparent chatbox");
 		addButton(28208, 466, "Side-stones arrangement");
 		addText(28209, "Transparent side panel", ataratix, 1, 0xff9933, false, true);
-		addText(28210, "Make each side panel transparent", ataratix, 0, 0xff9933, false, true);		
+		addText(28210, "Make each side panel transparent", ataratix, 0, 0xff9933, false, true);
 		addText(28211, "Transparent chatbox", ataratix, 1, 0xff9933, false, true);
-		addText(28212, "Make chatbox transparent", ataratix, 0, 0xff9933, false, true);	
+		addText(28212, "Make chatbox transparent", ataratix, 0, 0xff9933, false, true);
 		addText(28213, "Side-stones arrangement", ataratix, 1, 0xff9933, false, true);
-		addText(28214, "Change the side-stones arrangement", ataratix, 0, 0xff9933, false, true);		
+		addText(28214, "Change the side-stones arrangement", ataratix, 0, 0xff9933, false, true);
 		addText(28215, "Settings are not applicable in fixed mode!", ataratix, 0, 0xff9933, true, true);
-		
+
 		tab.totalChildren(14);
 		tab.child(0, 28201, 145, 70);
 		tab.child(1, 28202, 270, 80);
@@ -299,14 +297,14 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(5, 28207, 155, 165);
 		tab.child(6, 28208, 155, 220);
 		tab.child(7, 28209, 200, 115);
-		tab.child(8, 28210, 200, 130);		
+		tab.child(8, 28210, 200, 130);
 		tab.child(9, 28211, 200, 170);
-		tab.child(10, 28212, 200, 185);		
+		tab.child(10, 28212, 200, 185);
 		tab.child(11, 28213, 200, 225);
 		tab.child(12, 28214, 200, 240);
 		tab.child(13, 28215, 270, 261);
 	}
-	
+
 	public static void weaponStore(TextDrawingArea[] daniel) {
 		RSInterface tab = addInterface(56500);
 		addSprite(56501, 462);
@@ -319,7 +317,7 @@ public class CustomInterfaces extends RSInterface {
 		itemContainer(56508, 28, 8, 20, 50, false);
 		addText(56509, "", daniel, 0, 0xff9933, false, true);
 		addHoverButton(56510, 17, 21, 21, "Close", 250, 56511, 3);
-		addHoveredButton(56511, 18, 21, 21, 56512);	
+		addHoveredButton(56511, 18, 21, 21, 56512);
 		tab.totalChildren(11);
 		tab.child(0, 56501, 50, 20);
 		tab.child(1, 56502, 255, 27);
@@ -333,7 +331,7 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(9, 56510, 440, 24);
 		tab.child(10, 56511, 440, 24);
 	}
-	
+
 	public static void bankPin(TextDrawingArea[] daniel) {
 		RSInterface tab = addInterface(48750);
 		addSprite(48751, 461);
@@ -341,7 +339,7 @@ public class CustomInterfaces extends RSInterface {
 		addText(48753, "You need to enter your bank pin", daniel, 1, 0xff9933, true, true);
 		addText(48754, "before accessing this!", daniel, 1, 0xff9933, true, true);
 		addInputField(48750, 48755, 4, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 150, 23, false, false, "");
-		addHoverText(48756, "Close window", "Close window", daniel, 1, 0xF7AA25, false, true, 250);	
+		addHoverText(48756, "Close window", "Close window", daniel, 1, 0xF7AA25, false, true, 250);
 		tab.totalChildren(6);
 		tab.child(0, 48751, 125, 105);
 		tab.child(1, 48752, 270, 110);
@@ -349,16 +347,17 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(3, 48754, 270, 145);
 		tab.child(4, 48755, 197, 170);
 		tab.child(5, 48756, 410, 20);
-		
+
 	}
-	
+
 	public static void accountManager(TextDrawingArea[] daniel) {
 		RSInterface tab = addInterface(56000);
 		addSprite(56001, 460);
 		addHoverButton(56002, 17, 21, 21, "Close", 250, 56003, 3);
-		addHoveredButton(56003, 18, 21, 21, 56004);	
+		addHoveredButton(56003, 18, 21, 21, 56004);
 		addText(56005, "Account Security Management", daniel, 2, 0xff9933, true, true);
-		addText(56006, "Please answer the following prompts to ensure a safe account.", daniel, 0, 0xff9933, true, true);
+		addText(56006, "Please answer the following prompts to ensure a safe account.", daniel, 0, 0xff9933, true,
+				true);
 		addText(56007, "Having a safe account is crucial in the world of Ataratix.", daniel, 0, 0xff9933, true, true);
 		addText(56008, "Make sure to write all this information down!", daniel, 0, 0xff9933, true, true);
 		addText(56009, "Full Name", daniel, 2, 0xff9933, true, true);
@@ -373,7 +372,7 @@ public class CustomInterfaces extends RSInterface {
 		tab.totalChildren(16);
 		tab.child(0, 56001, 14, 5);
 		tab.child(1, 56002, 470, 12);
-		tab.child(2, 56003, 470, 12);	
+		tab.child(2, 56003, 470, 12);
 		tab.child(3, 56005, 263, 15);
 		tab.child(4, 56006, 263, 47);
 		tab.child(5, 56007, 263, 62);
@@ -388,27 +387,27 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(14, 56016, 220, 280);
 		tab.child(15, 56017, 263, 90);
 	}
-	
+
 	public static void ticketInterface(TextDrawingArea[] daniel) {
 		RSInterface boob = addInterface(51250);
 		addSprite(51251, 463);
 		addText(51252, "Ticket Manager", daniel, 2, 0xff9933, true, true);
 		addHoverButton(51253, 17, 21, 21, "Close", 250, 51254, 3);
 		addHoveredButton(51254, 18, 21, 21, 51255);
-		
+
 		addInputField(51250, 51255, 20, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 175, 30, false, false, "");
 		addText(51256, "Title:", daniel, 3, 0xff9933, true, true);
 		addText(51257, "Issue:", daniel, 3, 0xff9933, true, true);
 		addInputField(51250, 51258, 40, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 310, 25, false, false, "");
 		addInputField(51250, 51259, 40, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 310, 25, false, false, "");
-		
+
 		addHoverButton(51260, 61, 75, 30, "Send ticket", -1, 51261, 1);
 		addHoveredButton(51261, 62, 75, 30, 51262);
-		
+
 		addText(51263, "Send", daniel, 3, 0xff9933, true, true);
-		
+
 		boob.totalChildren(12);
-		
+
 		boob.child(0, 51251, 75, 50);
 		boob.child(1, 51252, 245, 62);
 		boob.child(2, 51253, 390, 59);
@@ -418,12 +417,12 @@ public class CustomInterfaces extends RSInterface {
 		boob.child(6, 51257, 245, 150);
 		boob.child(7, 51258, 93, 170);
 		boob.child(8, 51259, 93, 200);
-		
+
 		boob.child(9, 51260, 205, 235);
 		boob.child(10, 51261, 205, 235);
 		boob.child(11, 51263, 245, 242);
 	}
-	
+
 	public static void bankPinManager(TextDrawingArea[] daniel) {
 		RSInterface boob = addInterface(43750);
 		addSprite(43751, 459);
@@ -432,10 +431,10 @@ public class CustomInterfaces extends RSInterface {
 		addText(43754, "Type in a 4 digit number and press enter to set a pin.", daniel, 0, 0xff9933, true, true);
 		addInputField(43750, 43755, 4, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 100, 23, false, false, "");
 		addText(43756, "Be sure to write this down!", daniel, 0, 0xff9933, true, true);
-		
+
 		addHoverButton(43757, 17, 21, 21, "Close", 250, 43758, 3);
 		addHoveredButton(43758, 18, 21, 21, 43759);
-		
+
 		boob.totalChildren(8);
 		boob.child(0, 43751, 115, 90);
 		boob.child(1, 43752, 255, 98);
@@ -443,11 +442,11 @@ public class CustomInterfaces extends RSInterface {
 		boob.child(3, 43754, 255, 140);
 		boob.child(4, 43755, 205, 160);
 		boob.child(5, 43756, 255, 200);
-		
+
 		boob.child(6, 43757, 375, 94);
 		boob.child(7, 43758, 375, 94);
 	}
-	
+
 	public static void weaponLobby(TextDrawingArea[] daniel) {
 		RSInterface boob = addInterface(41250);
 		addSprite(41251, 453);
@@ -460,51 +459,51 @@ public class CustomInterfaces extends RSInterface {
 		boob.child(2, 41253, 385, 305);
 		boob.child(3, 41254, 385, 318);
 	}
-	
+
 	public static void weaponGame(TextDrawingArea[] daniel) {
 		RSInterface boob = addInterface(41270);
 		addTransparentSprite(41271, 452);
 		addText(41272, "Weapon Game", daniel, 2, 0xff9933, true, true);
 		addText(41273, "Time Left:", daniel, 0, 0xff9933, false, true);
-		addText(41274, "5:30", daniel, 0, 0xFFFFFF, false, true);		
+		addText(41274, "5:30", daniel, 0, 0xFFFFFF, false, true);
 		addText(41275, "Players:", daniel, 0, 0xff9933, false, true);
-		addText(41276, "7", daniel, 0, 0xFFFFFF, false, true);	
+		addText(41276, "7", daniel, 0, 0xFFFFFF, false, true);
 		addText(41277, "Leader:", daniel, 0, 0xff9933, false, true);
-		addText(41278, "Daniel", daniel, 0, 0xFFFFFF, false, true);	
+		addText(41278, "Daniel", daniel, 0, 0xFFFFFF, false, true);
 		addText(41279, "Crates:", daniel, 0, 0xff9933, false, true);
-		addText(41280, "0:14", daniel, 0, 0xFFFFFF, false, true);	
+		addText(41280, "0:14", daniel, 0, 0xFFFFFF, false, true);
 		addText(41281, "Tier:", daniel, 0, 0xff9933, false, true);
 		addText(41282, "5", daniel, 0, 0xFFFFFF, false, true);
 		itemContainer(41283, 45, 8, 20, 50, true);
-		
+
 		addText(41284, "Current", daniel, 0, 0xff9933, false, true);
 		addText(41285, "Next", daniel, 0, 0xff9933, false, true);
-		
+
 		boob.totalChildren(15);
 		boob.child(0, 41271, 355, 2);
 		boob.child(1, 41272, 433, 7);
-		
+
 		boob.child(2, 41273, 375, 25);
 		boob.child(3, 41274, 455, 25);
-		
+
 		boob.child(4, 41275, 375, 40);
 		boob.child(5, 41276, 455, 40);
-		
+
 		boob.child(6, 41277, 375, 55);
 		boob.child(7, 41278, 455, 55);
-		
+
 		boob.child(8, 41279, 375, 70);
 		boob.child(9, 41280, 455, 70);
-		
+
 		boob.child(10, 41281, 375, 85);
 		boob.child(11, 41282, 455, 85);
-		
+
 		boob.child(12, 41283, 378, 103);
-		
+
 		boob.child(13, 41284, 373, 130);
 		boob.child(14, 41285, 458, 130);
 	}
-	
+
 	public static void boltEnchanting(TextDrawingArea[] daniel) {
 		RSInterface tab = addInterface(42750);
 		addSprite(42751, 451);
@@ -547,7 +546,7 @@ public class CustomInterfaces extends RSInterface {
 		addText(42789, "0/0", daniel, 0, 0xFA0A0A, true, true);
 		addText(42790, "0/0", daniel, 0, 0xFA0A0A, true, true);
 		addText(42791, "0/0", daniel, 0, 0xFA0A0A, true, true);
-		
+
 		tab.totalChildren(40);
 		tab.child(0, 42751, 11, 15);
 		tab.child(1, 42752, 40, 100);
@@ -590,194 +589,164 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(38, 42790, 445, 290);
 		tab.child(39, 42791, 475, 290);
 	}
-	
+
 	public static void reportAbuse(TextDrawingArea[] daniel) {
 		RSInterface tab = addInterface(41750);
 		addSprite(41751, 449);
 		addHoverButton(41752, 17, 21, 21, "Close", 250, 41753, 3);
 		addHoveredButton(41753, 18, 21, 21, 41754);
 		addText(41755, "Report Abuse", daniel, 2, 0xff9933, true, true);
-		
-		addText(41756, "This form is for reporting players who are breaking our rules.", daniel, 1, 0xff9933, true, true);
-		addText(41757, "Using it sends a snapshot of the last 60 seconds of activity to us.", daniel, 1, 0xff9933, true, true);
+
+		addText(41756, "This form is for reporting players who are breaking our rules.", daniel, 1, 0xff9933, true,
+				true);
+		addText(41757, "Using it sends a snapshot of the last 60 seconds of activity to us.", daniel, 1, 0xff9933, true,
+				true);
 		addText(41758, "Misusing this form will result with an infraction, or worse.", daniel, 1, 0xDB0D0D, true, true);
 		addText(41759, "Please enter the username of the offending player:", daniel, 1, 0xff9933, true, true);
-		
+
 		addInputField(41750, 41760, 25, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 180, 23, false, false, "");
-		
-		addText(41761, "Please select the rule of which the offending player has broken.", daniel, 1, 0xff9933, true, true);
-		
-		String[] rules = { 
-			"Offensive language", "Item scamming", "Password scamming", "Bug abuse",
-			"Ataratix staff impersonation", "Account sharing/trading", "Macroing", "Multiple logging in",
-			"Advertising", "Real world trading", "Misuse of customer support", "Encouraging others to break rules",
-		};
-		
-		for (int i = 0; i < rules.length; i ++) {
-			addHoverText(41762 + i, (i + 1) + ") " + rules[i], "Select", daniel, 0, 0xF7AA25, false, true, 250);	
+
+		addText(41761, "Please select the rule of which the offending player has broken.", daniel, 1, 0xff9933, true,
+				true);
+
+		String[] rules = { "Offensive language", "Item scamming", "Password scamming", "Bug abuse",
+				"Ataratix staff impersonation", "Account sharing/trading", "Macroing", "Multiple logging in",
+				"Advertising", "Real world trading", "Misuse of customer support",
+				"Encouraging others to break rules", };
+
+		for (int i = 0; i < rules.length; i++) {
+			addHoverText(41762 + i, (i + 1) + ") " + rules[i], "Select", daniel, 0, 0xF7AA25, false, true, 250);
 		}
-		
+
 		addHoverButton(41774, 446, 135, 30, "Confirm selection", -1, 41775, 1);
 		addHoveredButton(41775, 447, 135, 30, 41776);
-		
-		 tab.totalChildren(24);
-		 tab.child(0, 41751, 11, 17);
-		 tab.child(1, 41752, 471, 24);
-		 tab.child(2, 41753, 471, 24);
-		 tab.child(3, 41755, 257, 26);
-		 tab.child(4, 41756, 257, 55);
-		 tab.child(5, 41757, 257, 70);
-		 tab.child(6, 41758, 257, 85);
-		 tab.child(7, 41759, 257, 105);
-		 tab.child(8, 41760, 170, 125);
-		 tab.child(9, 41761, 257, 160);
-		 
-		 tab.child(10, 41762, 65, 190);
-		 tab.child(11, 41763, 65, 205);
-		 tab.child(12, 41764, 65, 220);
-		 tab.child(13, 41765, 65, 235);
-		 tab.child(14, 41766, 65, 250);
-		 tab.child(15, 41767, 65, 265);
-		 
-		 tab.child(16, 41768, 285, 190);
-		 tab.child(17, 41769, 285, 205);
-		 tab.child(18, 41770, 285, 220);
-		 tab.child(19, 41771, 285, 235);
-		 tab.child(20, 41772, 285, 250);
-		 tab.child(21, 41773, 285, 265);
-		 
-		 tab.child(22, 41774, 160, 280);
-		 tab.child(23, 41775, 160, 280);
+
+		tab.totalChildren(24);
+		tab.child(0, 41751, 11, 17);
+		tab.child(1, 41752, 471, 24);
+		tab.child(2, 41753, 471, 24);
+		tab.child(3, 41755, 257, 26);
+		tab.child(4, 41756, 257, 55);
+		tab.child(5, 41757, 257, 70);
+		tab.child(6, 41758, 257, 85);
+		tab.child(7, 41759, 257, 105);
+		tab.child(8, 41760, 170, 125);
+		tab.child(9, 41761, 257, 160);
+
+		tab.child(10, 41762, 65, 190);
+		tab.child(11, 41763, 65, 205);
+		tab.child(12, 41764, 65, 220);
+		tab.child(13, 41765, 65, 235);
+		tab.child(14, 41766, 65, 250);
+		tab.child(15, 41767, 65, 265);
+
+		tab.child(16, 41768, 285, 190);
+		tab.child(17, 41769, 285, 205);
+		tab.child(18, 41770, 285, 220);
+		tab.child(19, 41771, 285, 235);
+		tab.child(20, 41772, 285, 250);
+		tab.child(21, 41773, 285, 265);
+
+		tab.child(22, 41774, 160, 280);
+		tab.child(23, 41775, 160, 280);
 	}
-	
+
 	public static void tabCreation(TextDrawingArea[] TDA) {
-		  RSInterface tab = addTabInterface(26700);
-		  addSprite(26701, 448);
-		  addHoverButton(26702, 17, 21, 21, "Close", 250, 26703, 3);
-		  addHoveredButton(26703, 18, 21, 21, 26704);
-		  addText(26705, "Tablet Creation", TDA, 2, 0xff9933, true, true);
-		  itemDisplay(26706, 50, 12, 3, 5, "Make", "Info");
-		  addText(26707, "Please click on a tab to create it", TDA, 0, 0xff9933, true, true);
-		  addText(26708, "Click on 'info' to get requirements.", TDA, 0, 0xff9933, true, true);
-		  tab.totalChildren(7);
-		  tab.child(0, 26701, 100, 70);
-		  tab.child(1, 26702, 475, 10);
-		  tab.child(2, 26703, 475, 10);
-		  tab.child(3, 26705, 257, 80);
-		  tab.child(4, 26706, 158, 144);
-		  tab.child(5, 26707, 257, 112);
-		  tab.child(6, 26708, 257, 122);
+		RSInterface tab = addTabInterface(26700);
+		addSprite(26701, 448);
+		addHoverButton(26702, 17, 21, 21, "Close", 250, 26703, 3);
+		addHoveredButton(26703, 18, 21, 21, 26704);
+		addText(26705, "Tablet Creation", TDA, 2, 0xff9933, true, true);
+		itemDisplay(26706, 50, 12, 3, 5, "Make", "Info");
+		addText(26707, "Please click on a tab to create it", TDA, 0, 0xff9933, true, true);
+		addText(26708, "Click on 'info' to get requirements.", TDA, 0, 0xff9933, true, true);
+		tab.totalChildren(7);
+		tab.child(0, 26701, 100, 70);
+		tab.child(1, 26702, 475, 10);
+		tab.child(2, 26703, 475, 10);
+		tab.child(3, 26705, 257, 80);
+		tab.child(4, 26706, 158, 144);
+		tab.child(5, 26707, 257, 112);
+		tab.child(6, 26708, 257, 122);
 	}
-	
+
 	public static void bounty(TextDrawingArea[] TDA) {
-		  RSInterface tab = addTabInterface(23300);
-		  addAdvancedSprite(23301, 434);
-		  addAdvancedSprite(23302, 433);
-		  addConfigSprite(23303, 435, -1, 0, 876);
-		  addSprite(23304, 441);
-		  addText(23305, "---", TDA, 0, 0xffff00, true, true);
-		  addText(23306, "Target:", TDA, 0, 0xffff00, true, true);
-		  addText(23307, "None", TDA, 1, 0xffffff, true, true);
-		  addText(23308, "Level: ------", TDA, 0, 0xffff00, true, true);
-		  addText(23309, "Current  Record", TDA, 0, 0xffff00, true, true);
-		  addText(23310, "0", TDA, 0, 0xffff00, true, true);
-		  addText(23311, "0", TDA, 0, 0xffff00, true, true);
-		  addText(23312, "0", TDA, 0, 0xffff00, true, true);
-		  addText(23313, "0", TDA, 0, 0xffff00, true, true);
-		  addText(23314, "Rogue:", TDA, 0, 0xffff00, true, true);
-		  addText(23315, "Hunter:", TDA, 0, 0xffff00, true, true);
-		  addConfigSprite(23316, -1, 436, 0, 877);
-		  addConfigSprite(23317, -1, 437, 0, 878);
-		  addConfigSprite(23318, -1, 438, 0, 879);
-		  addConfigSprite(23319, -1, 439, 0, 880);
-		  addConfigSprite(23320, -1, 440, 0, 881);
-		  tab.totalChildren(21);
-		  tab.child(0, 23301, 319, 8);
-		  tab.child(1, 23302, 339, 56);
-		  tab.child(2, 23303, 345, 18);
-		  tab.child(3, 23304, 348, 73);
-		  tab.child(4, 23305, 358, 41);
-		  tab.child(5, 23306, 455, 12);
-		  tab.child(6, 23307, 456, 25);
-		  tab.child(7, 23308, 457, 41);
-		  tab.child(8, 23309, 460, 59);
-		  tab.child(9, 23310, 438, 72);
-		  tab.child(10, 23311, 481, 72);
-		  tab.child(11, 23312, 438, 85);
-		  tab.child(12, 23313, 481, 85);
-		  tab.child(13, 23314, 393, 72);
-		  tab.child(14, 23315, 394, 85);
-		  tab.child(15, 23316, 345, 18);
-		  tab.child(16, 23317, 345, 18);
-		  tab.child(17, 23318, 345, 18);
-		  tab.child(18, 23319, 345, 18);
-		  tab.child(19, 23320, 345, 18);
-		  tab.child(20, 197, 2, 2);
+		RSInterface tab = addTabInterface(23300);
+		addAdvancedSprite(23301, 434);
+		addAdvancedSprite(23302, 433);
+		addConfigSprite(23303, 435, -1, 0, 876);
+		addSprite(23304, 441);
+		addText(23305, "---", TDA, 0, 0xffff00, true, true);
+		addText(23306, "Target:", TDA, 0, 0xffff00, true, true);
+		addText(23307, "None", TDA, 1, 0xffffff, true, true);
+		addText(23308, "Level: ------", TDA, 0, 0xffff00, true, true);
+		addText(23309, "Current  Record", TDA, 0, 0xffff00, true, true);
+		addText(23310, "0", TDA, 0, 0xffff00, true, true);
+		addText(23311, "0", TDA, 0, 0xffff00, true, true);
+		addText(23312, "0", TDA, 0, 0xffff00, true, true);
+		addText(23313, "0", TDA, 0, 0xffff00, true, true);
+		addText(23314, "Rogue:", TDA, 0, 0xffff00, true, true);
+		addText(23315, "Hunter:", TDA, 0, 0xffff00, true, true);
+		addConfigSprite(23316, -1, 436, 0, 877);
+		addConfigSprite(23317, -1, 437, 0, 878);
+		addConfigSprite(23318, -1, 438, 0, 879);
+		addConfigSprite(23319, -1, 439, 0, 880);
+		addConfigSprite(23320, -1, 440, 0, 881);
+		tab.totalChildren(21);
+		tab.child(0, 23301, 319, 8);
+		tab.child(1, 23302, 339, 56);
+		tab.child(2, 23303, 345, 18);
+		tab.child(3, 23304, 348, 73);
+		tab.child(4, 23305, 358, 41);
+		tab.child(5, 23306, 455, 12);
+		tab.child(6, 23307, 456, 25);
+		tab.child(7, 23308, 457, 41);
+		tab.child(8, 23309, 460, 59);
+		tab.child(9, 23310, 438, 72);
+		tab.child(10, 23311, 481, 72);
+		tab.child(11, 23312, 438, 85);
+		tab.child(12, 23313, 481, 85);
+		tab.child(13, 23314, 393, 72);
+		tab.child(14, 23315, 394, 85);
+		tab.child(15, 23316, 345, 18);
+		tab.child(16, 23317, 345, 18);
+		tab.child(17, 23318, 345, 18);
+		tab.child(18, 23319, 345, 18);
+		tab.child(19, 23320, 345, 18);
+		tab.child(20, 197, 2, 2);
 	}
 
-
-	
-	public static String[][] shopCategories = new String[][] { { "Purchasables", "413" }, { "Achievements", "414"}, { "Colors", "407"} };
+	public static String[][] shopCategories = new String[][] { { "Purchasables", "413" }, { "Achievements", "414" },
+			{ "Colors", "407" } };
 
 	public static String[][][] shopContent = new String[][][] {
-		/** Main Titles */
-		{ 
-			{ "Sir", "15" }, 
-			{ "Miss", "15" }, 
-			{ "Lord", "20" }, 
-			{ "Duderino", "25" }, 
-			{ "Copycat", "50" }, 
-			{ "King", "50" }, 
-			{ "Queen", "50" }, 
-			{ "Fam", "60" }, 
-			{ "Brother", "65" }, 
-			{ "Sister", "65" }, 
-			{ "Overlord", "75" }, 
-			{ "The", "100" }, 
-			{ "RichieRich", "100" }, 
-			{ "Emperor", "125" },
-			{ "Immortal", "135" },
-			{ "The Great", "140" },
-			{ "Champion", "150" },
-			{ "Swagtastic", "175" },
-			{ "Godly", "200" },
-			{ "Respected", "205" },
-			{ "The One", "210" },
-			{ "Holy", "220" },
-			{ "Skilled", "230" },
-			
-			
-		},
-	
-		/** Achievement Titles */
-		{ 
-			{ "Skeletal", "250 skeletal" }, 
-			{ "Blood", "1500 blood" }, 
-			{ "Multi-task", "100 tasks" }, 
-			{ "Pet", "10 pets" }, 
-			{ "Tztok", "50 firecape" }, 
-			{ "The Game", "Win WG 10" }, 
-			{ "Big Bear", "100 callisto" }, 
-			//{ "Trivial", "80 triviabot" }, 
-			//{ "The Killer", "Killer IV" }, 
-			//{ "Tztok", "Tztok" },
-			//{ "Resourceful", "Resourceful" }, 
-			//{ "Entitled", "Entitled" }, 
-		},
-	
-		/** Colors */
-		{ 
-			{ "<col=C22323>Red", "@whi@5,000.000" }, 
-			{ "<col=0FA80F>Green", "@whi@5,000.000" }, 
-			{ "<col=2AA4C9>Blue", "@whi@5,000.000" },
-			{ "<col=C9BC28>Yellow", "@whi@5,000.000" },
-			{ "<col=F58D16>Orange", "@whi@5,000.000" },
-			{ "<col=C931E8>Purple", "@whi@5,000.000" },
-			{ "<col=F52CD7>Pink", "@whi@5,000.000" },
-			{ "<col=FFFFFF>White", "@whi@5,000.000" }, 
-		} 
-	};
-	
+			/** Main Titles */
+			{ { "Sir", "15" }, { "Miss", "15" }, { "Lord", "20" }, { "Duderino", "25" }, { "Copycat", "50" },
+					{ "King", "50" }, { "Queen", "50" }, { "Fam", "60" }, { "Brother", "65" }, { "Sister", "65" },
+					{ "Overlord", "75" }, { "The", "100" }, { "RichieRich", "100" }, { "Emperor", "125" },
+					{ "Immortal", "135" }, { "The Great", "140" }, { "Champion", "150" }, { "Swagtastic", "175" },
+					{ "Godly", "200" }, { "Respected", "205" }, { "The One", "210" }, { "Holy", "220" },
+					{ "Skilled", "230" },
+
+			},
+
+			/** Achievement Titles */
+			{ { "Skeletal", "250 skeletal" }, { "Blood", "1500 blood" }, { "Multi-task", "100 tasks" },
+					{ "Pet", "10 pets" }, { "Tztok", "50 firecape" }, { "The Game", "Win WG 10" },
+					{ "Big Bear", "100 callisto" },
+			// { "Trivial", "80 triviabot" },
+			// { "The Killer", "Killer IV" },
+			// { "Tztok", "Tztok" },
+			// { "Resourceful", "Resourceful" },
+			// { "Entitled", "Entitled" },
+			},
+
+			/** Colors */
+			{ { "<col=C22323>Red", "@whi@5,000.000" }, { "<col=0FA80F>Green", "@whi@5,000.000" },
+					{ "<col=2AA4C9>Blue", "@whi@5,000.000" }, { "<col=C9BC28>Yellow", "@whi@5,000.000" },
+					{ "<col=F58D16>Orange", "@whi@5,000.000" }, { "<col=C931E8>Purple", "@whi@5,000.000" },
+					{ "<col=F52CD7>Pink", "@whi@5,000.000" }, { "<col=FFFFFF>White", "@whi@5,000.000" }, } };
+
 	public static void fireColor(TextDrawingArea[] ataratix) {
 		RSInterface tab = addInterface(49750);
 		addSprite(49751, 400);
@@ -785,7 +754,8 @@ public class CustomInterfaces extends RSInterface {
 		addHoveredButton(49753, 22, 21, 21, 49754);
 		addText(49755, "Fire Color Changer", 0xff9933, true, true, -1, ataratix, 2);
 		addText(49756, "By paying 10 credits you can change all fire colors.", 0xff9933, true, true, -1, ataratix, 0);
-		addText(49757, "You will earn double cooking & firemaking exp for 30mins.", 0xff9933, true, true, -1, ataratix, 0);
+		addText(49757, "You will earn double cooking & firemaking exp for 30mins.", 0xff9933, true, true, -1, ataratix,
+				0);
 		addText(49758, "Current Color: Orange", 0xff9933, true, true, -1, ataratix, 0);
 		addText(49759, "Changed by: Daniel", 0xff9933, true, true, -1, ataratix, 0);
 		addText(49760, "Daniel's Clan: Ataratix", 0xff9933, true, true, -1, ataratix, 0);
@@ -818,10 +788,10 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(16, 49771, 359, 133);
 		tab.child(17, 49772, 359, 133);
 	}
-	
+
 	public static void starter(TextDrawingArea[] daniel) {
 		RSInterface Interface = addInterface(51750);
-		
+
 		addSprite(51751, 431);
 		addText(51752, "Ataratix Account Setup", 0xff9933, true, true, 52, daniel, 2);
 		addHoverButton(51753, 17, 21, 21, "Close", 250, 51754, 3);
@@ -833,20 +803,20 @@ public class CustomInterfaces extends RSInterface {
 		addText(51760, "Line 1", 0xff9933, true, true, 52, daniel, 0);
 		addText(51761, "Line 2", 0xff9933, true, true, 52, daniel, 0);
 		addText(51762, "Line 3", 0xff9933, true, true, 52, daniel, 0);
-		
+
 		addConfigButton(51763, 51750, 425, 426, 14, 15, "Select Normal", 0, 5, 1085);
-		addConfigButton(51764, 51750, 425, 426, 14, 15, "Select Ironman", 1, 5, 1085);		
+		addConfigButton(51764, 51750, 425, 426, 14, 15, "Select Ironman", 1, 5, 1085);
 		addConfigButton(51765, 51750, 425, 426, 14, 15, "Select Ultimate Ironman", 2, 5, 1085);
-		
-		addHoverText(51766,"Normal", "Select Normal", daniel, 0, 0xF7AA25, false, true, 250);
-		addHoverText(51767,"Iron Man", "Select Iron Man", daniel, 0, 0xF7AA25, false, true, 250);
-		addHoverText(51768,"Ultimate Iron Man", "Select Ultimate Iron Man", daniel, 0, 0xF7AA25, false, true, 250);
-		
+
+		addHoverText(51766, "Normal", "Select Normal", daniel, 0, 0xF7AA25, false, true, 250);
+		addHoverText(51767, "Iron Man", "Select Iron Man", daniel, 0, 0xF7AA25, false, true, 250);
+		addHoverText(51768, "Ultimate Iron Man", "Select Ultimate Iron Man", daniel, 0, 0xF7AA25, false, true, 250);
+
 		addHoverButton(51769, -1, 123, 30, "Confirm selection", -1, 51770, 1);
 		addHoveredButton(51770, 432, 123, 30, 51771);
-		
+
 		Interface.totalChildren(19);
-		
+
 		Interface.child(0, 51751, 7, 8);
 		Interface.child(1, 51752, 250, 16);
 		Interface.child(2, 51753, 480, 500);
@@ -864,29 +834,29 @@ public class CustomInterfaces extends RSInterface {
 		Interface.child(14, 51766, 388, 78);
 		Interface.child(15, 51767, 388, 117);
 		Interface.child(16, 51768, 388, 154);
-		
+
 		Interface.child(17, 51769, 364, 180);
 		Interface.child(18, 51770, 364, 180);
 	}
-	
+
 	public static void inPvP(TextDrawingArea[] daniel) {
 		RSInterface Interface = addInterface(60250);
 		addSprite(60251, 422);
-		
+
 		addTooltipBox(60252, "You are currently standing in a @red@PvP@bla@ Zone.");
 		interfaceCache[60252].width = 30;
 		interfaceCache[60252].height = 35;
-		
+
 		addText(60253, "@or1@116 - 126", 0x000000, true, true, 52, daniel, 0);
 		addText(60254, "@or1@- - -", 0x000000, true, true, 52, daniel, 0);
-		
+
 		Interface.totalChildren(4);
 		Interface.child(0, 60251, 455, 275);
 		Interface.child(1, 60252, 460, 295);
 		Interface.child(2, 60253, 474, 310);
 		Interface.child(3, 60254, 474, 320);
 	}
-	
+
 	public static void godWars(TextDrawingArea[] daniel) {
 		int ID = 61750;
 		RSInterface Interface = addInterface(ID);
@@ -907,20 +877,20 @@ public class CustomInterfaces extends RSInterface {
 			Interface.child(5 + index, ID + (6 + index), 480, 30 + (index * 15));
 		}
 	}
-	
+
 	public static void inSafe(TextDrawingArea[] daniel) {
 		RSInterface Interface = addInterface(60350);
 		addSprite(60351, 423);
-		
+
 		addTooltipBox(60352, "You are currently standing in a @blu@Safe@bla@ Zone.");
 		interfaceCache[60352].width = 30;
 		interfaceCache[60352].height = 35;
-		
+
 		Interface.totalChildren(2);
 		Interface.child(0, 60351, 460, 295);
 		Interface.child(1, 60352, 460, 295);
 	}
-	
+
 	public static void inTimer(TextDrawingArea[] daniel) {
 		RSInterface Interface = addInterface(60450);
 		addSprite(60451, 424);
@@ -928,13 +898,13 @@ public class CustomInterfaces extends RSInterface {
 		addText(60453, "@whi@10", 0x000000, true, true, 52, daniel, 3);
 		interfaceCache[60452].width = 30;
 		interfaceCache[60452].height = 35;
-		
+
 		Interface.totalChildren(3);
 		Interface.child(0, 60451, 460, 295);
 		Interface.child(1, 60452, 460, 295);
 		Interface.child(2, 60453, 476, 303);
 	}
-	
+
 	public static void spawnTab(TextDrawingArea[] daniel) {
 		RSInterface Interface = addInterface(61250);
 		addSprite(61251, 82);
@@ -944,13 +914,12 @@ public class CustomInterfaces extends RSInterface {
 		addInputField(61250, 61255, 20, 0x332E24, 0x4D4636, 0x383631, 0x474540, "1", 180, 23, true, false, "");
 		addText(61257, "Item name:", daniel, 0, 0xF7AA25, false, true);
 		addText(61258, "Item amount:", daniel, 0, 0xF7AA25, false, true);
-		
-		
+
 		addText(61262, "Unnote:", daniel, 0, 0xF7AA25, false, true);
 		addText(61248, "Note:", daniel, 0, 0xF7AA25, false, true);
 		addText(61264, "Bank:", daniel, 0, 0xF7AA25, false, true);
 		addConfigButton(61263, 61250, 425, 426, 14, 15, "Select unnote", 0, 5, 1075);
-		addConfigButton(61249, 61250, 425, 426, 14, 15, "Select note", 1, 5, 1075);		
+		addConfigButton(61249, 61250, 425, 426, 14, 15, "Select note", 1, 5, 1075);
 		addConfigButton(61265, 61250, 425, 426, 14, 15, "Select bank", 2, 5, 1075);
 
 		addSprite(61259, 74);
@@ -961,14 +930,14 @@ public class CustomInterfaces extends RSInterface {
 		setChildren(200, scrollInterface);
 		int y = 17;
 		for (int i = 0; i < 100; i++) {
-			addHoverText(61101 + i,"", "Select item", daniel, 1, 0xF7AA25, false, false, 250);
+			addHoverText(61101 + i, "", "Select item", daniel, 1, 0xF7AA25, false, false, 250);
 			setBounds(61101 + i, 41, y, i, scrollInterface);
-			
+
 			addSprite(61266 + i, new Sprite(25, 25));
 			setBounds(61266 + i, 8, y - 10, i + 100, scrollInterface);
 			y += 40;
 		}
-		
+
 		Interface.totalChildren(21);
 		Interface.child(0, 61251, -4, 15);
 		Interface.child(1, 61252, -0, 15);
@@ -990,28 +959,28 @@ public class CustomInterfaces extends RSInterface {
 		Interface.child(16, 61259, 70, 118);
 		Interface.child(17, 61259, 70, 182);
 		Interface.child(18, 61100, -5, 117);
-		
+
 		Interface.child(19, 61248, 80, 100);
 		Interface.child(20, 61249, 110, 97);
-		
+
 	}
-	
+
 	public static void PKSkillTab(TextDrawingArea[] daniel) {
 		RSInterface Interface = addInterface(63700);
 		addSprite(63701, 71);
 		String[] levels = { "Attack", "Defence", "Strength", "Hitpoints", "Ranged", "Prayer", "Magic", "Bounty" };
-		for (int i = 0; i < 8; i ++) {
+		for (int i = 0; i < 8; i++) {
 			addText(63702 + i, "@or1@" + levels[i], 0x000000, false, true, 52, daniel, 2);
 		}
-		for (int i = 0; i < 8; i ++) {
+		for (int i = 0; i < 8; i++) {
 			addText(63720 + i, "@or2@99/99", 0x000000, false, true, 52, daniel, 1);
 		}
 		addHoverButton(64102, -1, 300, 25, "Set attack level", -1, 64103, 1);
 		addHoveredButton(64103, 386, 300, 25, 64104);
 		addHoverButton(64105, -1, 300, 25, "Set defence level", -1, 64106, 1);
-		addHoveredButton(64106, 388, 300, 25, 64107);	
+		addHoveredButton(64106, 388, 300, 25, 64107);
 		addHoverButton(64108, -1, 300, 25, "Set strength level", -1, 64109, 1);
-		addHoveredButton(64109, 387, 300, 25, 64110);	
+		addHoveredButton(64109, 387, 300, 25, 64110);
 		addHoverButton(64111, -1, 300, 25, "Set hitpoints level", -1, 64112, 1);
 		addHoveredButton(64112, 392, 300, 25, 64113);
 		addHoverButton(64114, -1, 300, 25, "Set ranged level", -1, 64115, 1);
@@ -1036,16 +1005,14 @@ public class CustomInterfaces extends RSInterface {
 		Interface.child(12, 64118, 2, 160);
 		Interface.child(13, 64120, 2, 190);
 		Interface.child(14, 64121, 2, 190);
-		for (int i = 0; i < 8; i ++) {
+		for (int i = 0; i < 8; i++) {
 			Interface.child(15 + i, 63702 + i, 30, 16 + (i * 30));
 		}
-		for (int i = 0; i < 8; i ++) {
+		for (int i = 0; i < 8; i++) {
 			Interface.child(23 + i, 63720 + i, 125, 17 + (i * 30));
 		}
 	}
-	
-	
-	
+
 	public static void questInterface(TextDrawingArea[] TDA) {
 		RSInterface Interface = addInterface(8134);
 		Interface.centerText = true;
@@ -1068,12 +1035,12 @@ public class CustomInterfaces extends RSInterface {
 		setChildren(51, Interface);
 		int Ypos = 18;
 		int frameID = 0;
-		for(int iD = 8145; iD <= 8195;iD++) {
+		for (int iD = 8145; iD <= 8195; iD++) {
 			addText(iD, "", 0x000080, true, false, 52, TDA, 1);
 			setBounds(iD, 202, Ypos, frameID, Interface);
 			frameID++;
 			Ypos += 19;
-			Ypos ++;
+			Ypos++;
 		}
 	}
 
@@ -1094,7 +1061,8 @@ public class CustomInterfaces extends RSInterface {
 			addHoveredButton(id + frame + 10, 381, 120, 28, id + frame + 11);
 			addText(id + frame + 12, shopCategories[index / 3][0], tda, 0, 0xE6BE78, false, true);
 
-			loyaltySubShop(id + frame + 13, id, configOffset, tda, shopContent[index / 3], Integer.parseInt(shopCategories[index / 3][1]));
+			loyaltySubShop(id + frame + 13, id, configOffset, tda, shopContent[index / 3],
+					Integer.parseInt(shopCategories[index / 3][1]));
 
 			shop.child(index + 7, id + frame + 9, 9, 100 + (index / 3) * 30);
 			shop.child(index + 8, id + frame + 10, 9, 100 + (index / 3) * 30);
@@ -1113,7 +1081,8 @@ public class CustomInterfaces extends RSInterface {
 		shop.child(8 + shopCategories.length * 3 - 1, id + 13, 131, 70);
 	}
 
-	public static void loyaltySubShop(int id, int parent, int configOffset, TextDrawingArea[] tda, String[][] titles, int currency) {
+	public static void loyaltySubShop(int id, int parent, int configOffset, TextDrawingArea[] tda, String[][] titles,
+			int currency) {
 		RSInterface shop = addTabInterface(id);
 		shop.totalChildren(titles.length * 7);
 		int frame = 0;
@@ -1124,7 +1093,8 @@ public class CustomInterfaces extends RSInterface {
 			int y = ((index / 7) / 3) * 50;
 			addSprite(id + frame + 1, 377);
 
-			addHoverConfigButton(id + frame + 2, id + frame + 3, 374, 375, 56, 11, "Buy", new int[] { 0 }, new int[] { 0 }, new int[][] { { 1040 + index / 7 + configOffset } });
+			addHoverConfigButton(id + frame + 2, id + frame + 3, 374, 375, 56, 11, "Buy", new int[] { 0 },
+					new int[] { 0 }, new int[][] { { 1040 + index / 7 + configOffset } });
 			addHoveredConfigButton(interfaceCache[id + frame + 2], id + frame + 3, id + frame + 4, 373, 376);
 
 			addText(id + frame + 5, title, tda, 0, 0xE6BE78, true, true);
@@ -1147,7 +1117,6 @@ public class CustomInterfaces extends RSInterface {
 		shop.scrollMax = (titles.length / 3 + (titles.length % 3 > 0 ? 1 : 0)) * 50;
 		shop.parentID = parent;
 	}
-
 
 	public static void tracker(TextDrawingArea[] ataratix) {
 		RSInterface tab = addInterface(54100);
@@ -1175,9 +1144,10 @@ public class CustomInterfaces extends RSInterface {
 			y += 20;
 		}
 	}
-	
+
 	/**
 	 * Bank settings
+	 * 
 	 * @param ataratix
 	 */
 	public static void bankSettings(TextDrawingArea[] ataratix) {
@@ -1206,17 +1176,18 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(9, 32511, 239, 65 + 90);
 		tab.child(10, 32512, 275, 265);
 	}
-	
+
 	/**
 	 * Profile Leaderboards
+	 * 
 	 * @param daniel
 	 */
 	public static void profileLeaderboards(TextDrawingArea[] daniel) {
-		RSInterface tab = addInterface(47400);			
+		RSInterface tab = addInterface(47400);
 		addSprite(47401, 367);
 		addHoverButton(47402, 17, 21, 21, "Close", 250, 47403, 3);
 		addHoveredButton(47403, 18, 21, 21, 47404);
-		addText(47405, "Profile Leaderboards", daniel, 2, 0xF7AA25, true, true);		
+		addText(47405, "Profile Leaderboards", daniel, 2, 0xF7AA25, true, true);
 		addHoverButton(47406, 59, 123, 30, "Views", 0, 47407, 1);
 		addHoveredButton(47407, 60, 123, 30, 47408);
 		addHoverButton(47409, 59, 123, 30, "Tab 2", 0, 47410, 1);
@@ -1225,11 +1196,11 @@ public class CustomInterfaces extends RSInterface {
 		addHoveredButton(47413, 60, 123, 30, 47414);
 		addHoverButton(47415, 59, 123, 30, "Tab 4", 0, 47416, 1);
 		addHoveredButton(47416, 60, 123, 30, 47417);
-		addText(47418, "Views", daniel, 2, 0xF7AA25, true, true);	
-		addText(47419, "Likes", daniel, 2, 0xF7AA25, true, true);	
-		addText(47420, "Dislikes", daniel, 2, 0xF7AA25, true, true);	
-		addText(47421, "Ratio", daniel, 2, 0xF7AA25, true, true);	
-		tab.totalChildren(17);	
+		addText(47418, "Views", daniel, 2, 0xF7AA25, true, true);
+		addText(47419, "Likes", daniel, 2, 0xF7AA25, true, true);
+		addText(47420, "Dislikes", daniel, 2, 0xF7AA25, true, true);
+		addText(47421, "Ratio", daniel, 2, 0xF7AA25, true, true);
+		tab.totalChildren(17);
 		tab.child(0, 47401, 11, 17);
 		tab.child(1, 47402, 475, 23);
 		tab.child(2, 47403, 475, 23);
@@ -1241,7 +1212,7 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(8, 47412, 256, 51);
 		tab.child(9, 47413, 256, 51);
 		tab.child(10, 47415, 376, 51);
-		tab.child(11, 47416, 376, 51);		
+		tab.child(11, 47416, 376, 51);
 		tab.child(12, 47418, 75, 56);
 		tab.child(13, 47419, 195, 56);
 		tab.child(14, 47420, 315, 56);
@@ -1259,59 +1230,59 @@ public class CustomInterfaces extends RSInterface {
 			y += 20;
 		}
 	}
-	
+
 	public static void settings(TextDrawingArea[] daniel) {
 		RSInterface tab = addInterface(28400);
-		
+
 		addSprite(28401, 360);
 		addSprite(28402, 38);
 		addText(28403, "Settings", daniel, 2, 0xF7AA25, true, true);
-		addText(28404, "Customize your game play!", daniel, 0, 0xF7AA25, true, true);		
+		addText(28404, "Customize your game play!", daniel, 0, 0xF7AA25, true, true);
 		addHoverButton(28405, 446, 130, 24, "Confirm Selection", -1, 28406, 1);
-		addHoveredButton(28406, 447, 130, 24, 28407);		
+		addHoveredButton(28406, 447, 130, 24, 28407);
 		addHoverButton(28408, 351, 15, 15, "Reset to default", -1, 28409, 1);
-		addHoveredButton(28409, 352, 15, 15, 28410);	
-		
-		tab.totalChildren(10);	
+		addHoveredButton(28409, 352, 15, 15, 28410);
+
+		tab.totalChildren(10);
 		tab.child(0, 28401, -4, 34);
 		tab.child(1, 28402, -0, 34);
 		tab.child(2, 28402, -0, 229);
 		tab.child(3, 28403, 95, 4);
-		tab.child(4, 28404, 95, 20);	
+		tab.child(4, 28404, 95, 20);
 		tab.child(5, 28415, 5, 36);
 		tab.child(6, 28405, -10, 233);
-		tab.child(7, 28406, -10, 233);	
+		tab.child(7, 28406, -10, 233);
 		tab.child(8, 28408, 160, 237);
 		tab.child(9, 28409, 160, 237);
-		
+
 		int amount = SettingHandler.strings.length;
-		
+
 		RSInterface scrollInterface = addTabInterface(28415);
 		scrollInterface.width = 170;
 		scrollInterface.height = 192;
 		scrollInterface.scrollMax = 650;
 		setChildren(amount * 2, scrollInterface);
-		
+
 		int y = 0;
-		for (int i = 0; i < amount; i++) {		
+		for (int i = 0; i < amount; i++) {
 			addButton(28420 + i, 473, "Toggle " + SettingHandler.strings[i]);
 			setBounds(28420 + i, 35, y + 5, i, scrollInterface);
 			addText(28450 + i, "", daniel, 0, 0xF7AA25, false, true);
-			setBounds(28450 + i, 45, y + 10, i + amount, scrollInterface);	
+			setBounds(28450 + i, 45, y + 10, i + amount, scrollInterface);
 			y += 30;
 		}
 	}
-	
+
 	public static void staffTab(TextDrawingArea[] daniel) {
-		RSInterface tab = addInterface(49700);			
+		RSInterface tab = addInterface(49700);
 		addSprite(49701, 360);
 		addSprite(49702, 38);
 		addText(49703, "Staff Tab", daniel, 2, 0xF7AA25, true, true);
 		addText(49704, "You have access to all commands!", daniel, 0, 0xF7AA25, true, true);
 		addText(49705, "</col>Rank: @red@<img=2> Owner", daniel, 0, 0xF7AA25, true, true);
 		addHoverText(49706, "> Back to Quest Tab <", "Go back", daniel, 0, 0xF7AA25, true, true, 60);
-		
-		tab.totalChildren(8);	
+
+		tab.totalChildren(8);
 		tab.child(0, 49701, -4, 34);
 		tab.child(1, 49702, -0, 34);
 		tab.child(2, 49702, -0, 229);
@@ -1320,16 +1291,15 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(5, 49710, 5, 36);
 		tab.child(6, 49705, 93, 20);
 		tab.child(7, 49706, 61, 247);
-		
-		String[] titles = { 
-			"@mbl@Check bank user", "@mbl@Kick user", "@mbl@Mute user", "@mbl@Unmute user", "@mbl@Ban user",
-			"@mbl@Unban user", "@mbl@Jail user", "@mbl@Unjail user", "@mbl@Move home user", "@mye@Copy user", 
-			"@mye@Freeze user", "@mbl@Get info user", "@mye@Demote user", "@mye@Give mod user", "@mre@Kill user",
-			"@mbl@Tele to user", "@mbl@Tele to me user", "@mre@Boo user", "@mre@Random NPC user", "@mye@Refresh"
-		};
-		
+
+		String[] titles = { "@mbl@Check bank user", "@mbl@Kick user", "@mbl@Mute user", "@mbl@Unmute user",
+				"@mbl@Ban user", "@mbl@Unban user", "@mbl@Jail user", "@mbl@Unjail user", "@mbl@Move home user",
+				"@mye@Copy user", "@mye@Freeze user", "@mbl@Get info user", "@mye@Demote user", "@mye@Give mod user",
+				"@mre@Kill user", "@mbl@Tele to user", "@mbl@Tele to me user", "@mre@Boo user", "@mre@Random NPC user",
+				"@mye@Refresh" };
+
 		int amount = titles.length;
-		
+
 		RSInterface scrollInterface = addTabInterface(49710);
 		scrollInterface.width = 170;
 		scrollInterface.height = 192;
@@ -1337,37 +1307,39 @@ public class CustomInterfaces extends RSInterface {
 		setChildren(amount, scrollInterface);
 		int y = 0;
 		for (int i = 0; i < amount; i++) {
-			addInputField(49700, 49720 + i, 15, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 136, 25, false, false, titles[i]);
+			addInputField(49700, 49720 + i, 15, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 136, 25, false, false,
+					titles[i]);
 			setBounds(49720 + i, 15, y + 5, i, scrollInterface);
 			y += 35;
 		}
-		
+
 	}
-	
+
 	/**
 	 * Profile Tab
+	 * 
 	 * @param daniel
 	 */
 	public static void profileTab(TextDrawingArea[] daniel) {
-		RSInterface tab = addInterface(51500);			
+		RSInterface tab = addInterface(51500);
 		addSprite(51501, 360);
 		addSprite(51502, 38);
 		addText(51503, "Player Profiler", daniel, 2, 0xF7AA25, true, true);
 		addHoverButton(51504, 44, 45, 45, "Search", 51504, 51505, 1);
-		addHoveredButton(51505, 45, 45, 45, 51506);	
+		addHoveredButton(51505, 45, 45, 45, 51506);
 		addConfigButton(51507, 51500, 289, 290, 14, 15, "Select", 1, 5, 1032);
 		addConfigButton(51508, 51500, 289, 290, 14, 15, "Select", 2, 5, 1032);
 		addHoverText(51509, "Enable Privacy", "Enable", daniel, 0, 0xF7AA25, false, true, 60);
-		addHoverText(51510, "Disable Privacy", "Disable", daniel, 0, 0xF7AA25, false, true, 60);	
+		addHoverText(51510, "Disable Privacy", "Disable", daniel, 0, 0xF7AA25, false, true, 60);
 		addHoverButton(51511, 36, 150, 35, "View my profile", 0, 51512, 1);
 		addHoveredButton(51512, 37, 150, 35, 51513);
-		addText(51514, "My Profile", daniel, 2, 0xF7AA25, true, true);	
+		addText(51514, "My Profile", daniel, 2, 0xF7AA25, true, true);
 		addHoverButton(51515, 36, 150, 35, "View profile leaderboards", 0, 51516, 1);
 		addHoveredButton(51516, 37, 150, 35, 51517);
-		addText(51518, "Leaderboards", daniel, 2, 0xF7AA25, true, true);	
+		addText(51518, "Leaderboards", daniel, 2, 0xF7AA25, true, true);
 		addHoverButton(51519, 362, 50, 20, "Settings", 0, 51520, 1);
-		addHoveredButton(51520, 361, 50, 20, 51521);	
-		tab.totalChildren(18);	
+		addHoveredButton(51520, 361, 50, 20, 51521);
+		tab.totalChildren(18);
 		tab.child(0, 51501, -4, 34);
 		tab.child(1, 51502, -0, 34);
 		tab.child(2, 51502, -0, 229);
@@ -1387,13 +1359,14 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(16, 51519, 1000, 1000);
 		tab.child(17, 51520, 1000, 1000);
 	}
-	
+
 	/**
 	 * My Profile
+	 * 
 	 * @param daniel
 	 */
 	public static void myProfile(TextDrawingArea[] daniel) {
-		RSInterface tab = addInterface(51600);	
+		RSInterface tab = addInterface(51600);
 		addSprite(51601, 359);
 		addText(51602, "My Profile", daniel, 2, 0xff981f, true, true);
 		addHoverButton(51603, 17, 21, 21, "Close", 250, 51604, 3);
@@ -1414,7 +1387,7 @@ public class CustomInterfaces extends RSInterface {
 		setChildren(35, scrollInterface);
 		int y = 0;
 		for (int i = 0; i < 35; i++) {
-			addHoverText(51681 + i, "" , "", daniel, 0, 0xff981f, true, true, 160, 0xff981f);
+			addHoverText(51681 + i, "", "", daniel, 0, 0xff981f, true, true, 160, 0xff981f);
 			setBounds(51681 + i, 0, y, i, scrollInterface);
 			y += 20;
 		}
@@ -1428,7 +1401,8 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(7, 51609, 105, 85);
 		for (int i = 0; i < 20; i++) {
 			tab.child(9 + i, 51610 + i, 205 + (i / 10) * 36, 50 + (i % 10) * 25);
-			addTooltipBox(51632 + i, Skills.SKILL_NAMES[i].substring(0, 1).toUpperCase() + Skills.SKILL_NAMES[i].substring(1) + " level: 1/1\\nPrestige level: 1");
+			addTooltipBox(51632 + i, Skills.SKILL_NAMES[i].substring(0, 1).toUpperCase()
+					+ Skills.SKILL_NAMES[i].substring(1) + " level: 1/1\\nPrestige level: 1");
 			interfaceCache[51632 + i].width = 25;
 			interfaceCache[51632 + i].height = 25;
 			tab.child(30 + i, 51632 + i, 205 + (i / 10) * 36, 50 + (i % 10) * 25);
@@ -1439,13 +1413,14 @@ public class CustomInterfaces extends RSInterface {
 		interfaceCache[51632 + 20].height = 25;
 		tab.child(50, 51632 + 20, 222, 290);
 	}
-	
+
 	/**
 	 * Player Profiler
+	 * 
 	 * @param daniel
 	 */
 	public static void playerProfiler(TextDrawingArea[] daniel) {
-		RSInterface tab = addInterface(51800);	
+		RSInterface tab = addInterface(51800);
 		addSprite(51801, 359);
 		addText(51802, "Player Profiler", daniel, 2, 0xff981f, true, true);
 		addHoverButton(51803, 17, 21, 21, "Close", 250, 51804, 3);
@@ -1457,13 +1432,13 @@ public class CustomInterfaces extends RSInterface {
 		for (int i = 0; i < 21; i++) {
 			addSprite(51810 + i, 324 + i);
 		}
-		
+
 		addHoverButton(51990, 363, 30, 30, "Like", 0, 51991, 1);
 		addHoveredButton(51991, 364, 30, 30, 51992);
-		
+
 		addHoverButton(51993, 365, 30, 30, "Dislike", 0, 51994, 1);
 		addHoveredButton(51994, 366, 30, 30, 51995);
-		
+
 		tab.totalChildren(55);
 		tab.child(8, 51880, 303, 49);
 		RSInterface scrollInterface = addTabInterface(51880);
@@ -1473,7 +1448,7 @@ public class CustomInterfaces extends RSInterface {
 		setChildren(35, scrollInterface);
 		int y = 0;
 		for (int i = 0; i < 35; i++) {
-			addHoverText(51881 + i, "" , "", daniel, 0, 0xff981f, true, true, 160, 0xff981f);
+			addHoverText(51881 + i, "", "", daniel, 0, 0xff981f, true, true, 160, 0xff981f);
 			setBounds(51881 + i, 0, y, i, scrollInterface);
 			y += 20;
 		}
@@ -1487,7 +1462,8 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(7, 51809, 105, 85);
 		for (int i = 0; i < 20; i++) {
 			tab.child(9 + i, 51810 + i, 205 + (i / 10) * 36, 50 + (i % 10) * 25);
-			addTooltipBox(51832 + i, Skills.SKILL_NAMES[i].substring(0, 1).toUpperCase() + Skills.SKILL_NAMES[i].substring(1) + " level: 1/1\\nPrestige level: 1");
+			addTooltipBox(51832 + i, Skills.SKILL_NAMES[i].substring(0, 1).toUpperCase()
+					+ Skills.SKILL_NAMES[i].substring(1) + " level: 1/1\\nPrestige level: 1");
 			interfaceCache[51832 + i].width = 25;
 			interfaceCache[51832 + i].height = 25;
 			tab.child(30 + i, 51832 + i, 205 + (i / 10) * 36, 50 + (i % 10) * 25);
@@ -1502,9 +1478,10 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(53, 51993, 307, 10);
 		tab.child(54, 51994, 307, 10);
 	}
-	
+
 	/**
 	 * Pest control boat
+	 * 
 	 * @param tda
 	 */
 	public static void pestControlBoat(TextDrawingArea[] tda) {
@@ -1525,6 +1502,7 @@ public class CustomInterfaces extends RSInterface {
 
 	/**
 	 * Pest control game
+	 * 
 	 * @param tda
 	 */
 	public static void pestControlGame(TextDrawingArea[] tda) {
@@ -1541,10 +1519,10 @@ public class CustomInterfaces extends RSInterface {
 		addText(21110, "", 0xCC0000, false, true, 52, tda, 1);
 		addText(21111, "250", 0x99FF33, false, true, 52, tda, 1);
 		addText(21112, "250", 0x99FF33, false, true, 52, tda, 1);
-		addText(21113, "250", 0x99FF33, false, true, 52, tda, 1); 
-		addText(21114, "250", 0x99FF33, false, true, 52, tda, 1); 
-		addText(21115, "200", 0x99FF33, false, true, 52, tda, 1); 
-		addText(21116, "0", 0x99FF33, false, true, 52, tda, 1); 
+		addText(21113, "250", 0x99FF33, false, true, 52, tda, 1);
+		addText(21114, "250", 0x99FF33, false, true, 52, tda, 1);
+		addText(21115, "200", 0x99FF33, false, true, 52, tda, 1);
+		addText(21116, "0", 0x99FF33, false, true, 52, tda, 1);
 		addText(21117, "Time Remaining:", 0xFFFFFF, false, true, 52, tda, 0);
 		addText(21118, "", 0xFFFFFF, false, true, 52, tda, 0);
 		int last = 18;
@@ -1570,18 +1548,19 @@ public class CustomInterfaces extends RSInterface {
 		setBounds(21117, 8, 88, 16, RSinterface);
 		setBounds(21118, 87, 88, 17, RSinterface);
 	}
-	
+
 	/**
 	 * Warrior Guild
+	 * 
 	 * @param daniel
 	 */
 	public static void warriorGuild(TextDrawingArea[] daniel) {
-		RSInterface tab = addInterface(51200);	
+		RSInterface tab = addInterface(51200);
 		addText(51202, "Warrior's Guild", daniel, 2, 0xff981f, true, true);
 		itemDisplay(51203, 30, 30, 4, 5);
 		addText(51204, "Dropping:", daniel, 0, 0xff981f, true, true);
 		addText(51205, "Tokens Used:", daniel, 0, 0xff981f, true, true);
-		addText(51206, "Cyclops Killed:", daniel, 0, 0xff981f, true, true);	
+		addText(51206, "Cyclops Killed:", daniel, 0, 0xff981f, true, true);
 		tab.totalChildren(5);
 		tab.child(0, 51202, 460, 215);
 		tab.child(1, 51203, 450, 260);
@@ -1589,9 +1568,10 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(3, 51205, 460, 300);
 		tab.child(4, 51206, 460, 320);
 	}
-	
+
 	/**
 	 * Prestige
+	 * 
 	 * @param daniel
 	 */
 	public static void prestige(TextDrawingArea[] daniel) {
@@ -1617,7 +1597,7 @@ public class CustomInterfaces extends RSInterface {
 		addText(51020, "Thieving (0)", daniel, 0, 0xff981f, true, true);
 		addText(51021, "Crafting (0)", daniel, 0, 0xff981f, true, true);
 		addText(51022, "Fletching (0)", daniel, 0, 0xff981f, true, true);
-		addText(51023, "Slayer (0)", daniel, 0, 0xff981f, true, true);	
+		addText(51023, "Slayer (0)", daniel, 0, 0xff981f, true, true);
 		addText(51024, "Mining (0)", daniel, 0, 0xff981f, true, true);
 		addText(51025, "Smithing (0)", daniel, 0, 0xff981f, true, true);
 		addText(51026, "Fishing (0)", daniel, 0, 0xff981f, true, true);
@@ -1625,58 +1605,58 @@ public class CustomInterfaces extends RSInterface {
 		addText(51028, "Firemaking (0)", daniel, 0, 0xff981f, true, true);
 		addText(51029, "Woodcutting (0)", daniel, 0, 0xff981f, true, true);
 		addText(51030, "Farming (0)", daniel, 0, 0xff981f, true, true);
-		addText(51031, "Hunter (0)", daniel, 0, 0xff981f, true, true);		
+		addText(51031, "Hunter (0)", daniel, 0, 0xff981f, true, true);
 		addHoverButton(51032, "", 0, 104, 30, "Prestige Attack", 0, 51033, 1);
 		addHoveredButton(51033, 302, 104, 30, 51034);
-		addHoverButton(51035,  "", 0, 104, 30, "Prestige Strength", 0, 51036, 1);
+		addHoverButton(51035, "", 0, 104, 30, "Prestige Strength", 0, 51036, 1);
 		addHoveredButton(51036, 303, 104, 30, 51037);
-		addHoverButton(51038,  "", 0, 104, 30, "Prestige Defence", 0, 51039, 1);
-		addHoveredButton(51039, 304, 104, 30, 51040);	
-		addHoverButton(51041,  "", 0, 104, 30, "Prestige Ranged", 0, 51042, 1);
-		addHoveredButton(51042, 305, 104, 30, 51043);		
-		addHoverButton(51044,  "", 0, 104, 30, "Prestige Prayer", 0, 51045, 1);
-		addHoveredButton(51045, 306, 104, 30, 51046);		
-		addHoverButton(51047,  "", 0, 104, 30, "Prestige Magic", 0, 51048, 1);
-		addHoveredButton(51048, 307, 104, 30, 51049);	
-		addHoverButton(51050,  "", 0, 104, 30, "Prestige Runecrafting", 0, 51051, 1);
-		addHoveredButton(51051, 308, 104, 30, 51052);	
-		addHoverButton(51053,  "", 0, 104, 30, "Prestige Hitpoints", 0, 51054, 1);
-		addHoveredButton(51054, 309, 104, 30, 51055);	
-		addHoverButton(51056,  "", 0, 104, 30, "Prestige Agility", 0, 51057, 1);
-		addHoveredButton(51057, 310, 104, 30, 51058);	
-		addHoverButton(51059,  "", 0, 104, 30, "Prestige Herblore", 0, 51060, 1);
-		addHoveredButton(51060, 311, 104, 30, 51061);		
-		addHoverButton(51062,  "", 0, 104, 30, "Prestige Thieving", 0, 51063, 1);
+		addHoverButton(51038, "", 0, 104, 30, "Prestige Defence", 0, 51039, 1);
+		addHoveredButton(51039, 304, 104, 30, 51040);
+		addHoverButton(51041, "", 0, 104, 30, "Prestige Ranged", 0, 51042, 1);
+		addHoveredButton(51042, 305, 104, 30, 51043);
+		addHoverButton(51044, "", 0, 104, 30, "Prestige Prayer", 0, 51045, 1);
+		addHoveredButton(51045, 306, 104, 30, 51046);
+		addHoverButton(51047, "", 0, 104, 30, "Prestige Magic", 0, 51048, 1);
+		addHoveredButton(51048, 307, 104, 30, 51049);
+		addHoverButton(51050, "", 0, 104, 30, "Prestige Runecrafting", 0, 51051, 1);
+		addHoveredButton(51051, 308, 104, 30, 51052);
+		addHoverButton(51053, "", 0, 104, 30, "Prestige Hitpoints", 0, 51054, 1);
+		addHoveredButton(51054, 309, 104, 30, 51055);
+		addHoverButton(51056, "", 0, 104, 30, "Prestige Agility", 0, 51057, 1);
+		addHoveredButton(51057, 310, 104, 30, 51058);
+		addHoverButton(51059, "", 0, 104, 30, "Prestige Herblore", 0, 51060, 1);
+		addHoveredButton(51060, 311, 104, 30, 51061);
+		addHoverButton(51062, "", 0, 104, 30, "Prestige Thieving", 0, 51063, 1);
 		addHoveredButton(51063, 312, 104, 30, 51064);
-		addHoverButton(51065,  "", 0, 104, 30, "Prestige Crafting", 0, 51066, 1);
-		addHoveredButton(51066, 313, 104, 30, 51067);		
-		addHoverButton(51068,  "", 0, 104, 30, "Prestige Fletching", 0, 51069, 1);
-		addHoveredButton(51069, 314, 104, 30, 51070);		
-		addHoverButton(51071,  "", 0, 104, 30, "Prestige Slayer", 0, 51072, 1);
-		addHoveredButton(51072, 315, 104, 30, 51073);		
-		addHoverButton(51074,  "", 0, 104, 30, "Prestige Mining", 0, 51075, 1);
-		addHoveredButton(51075, 316, 104, 30, 51076);	
-		addHoverButton(51077,  "", 0, 104, 30, "Prestige Smithing", 0, 51078, 1);
-		addHoveredButton(51078, 317, 104, 30, 51079);	
-		addHoverButton(51080,  "", 0, 104, 30, "Prestige Fishing", 0, 51081, 1);
-		addHoveredButton(51081, 318, 104, 30, 51082);	
-		addHoverButton(51083,  "", 0, 104, 30, "Prestige Cooking", 0, 51084, 1);
+		addHoverButton(51065, "", 0, 104, 30, "Prestige Crafting", 0, 51066, 1);
+		addHoveredButton(51066, 313, 104, 30, 51067);
+		addHoverButton(51068, "", 0, 104, 30, "Prestige Fletching", 0, 51069, 1);
+		addHoveredButton(51069, 314, 104, 30, 51070);
+		addHoverButton(51071, "", 0, 104, 30, "Prestige Slayer", 0, 51072, 1);
+		addHoveredButton(51072, 315, 104, 30, 51073);
+		addHoverButton(51074, "", 0, 104, 30, "Prestige Mining", 0, 51075, 1);
+		addHoveredButton(51075, 316, 104, 30, 51076);
+		addHoverButton(51077, "", 0, 104, 30, "Prestige Smithing", 0, 51078, 1);
+		addHoveredButton(51078, 317, 104, 30, 51079);
+		addHoverButton(51080, "", 0, 104, 30, "Prestige Fishing", 0, 51081, 1);
+		addHoveredButton(51081, 318, 104, 30, 51082);
+		addHoverButton(51083, "", 0, 104, 30, "Prestige Cooking", 0, 51084, 1);
 		addHoveredButton(51084, 319, 104, 30, 51085);
-		addHoverButton(51086,  "", 0, 104, 30, "Prestige Firemaking", 0, 51087, 1);
-		addHoveredButton(51087, 320, 104, 30, 51088);		
-		addHoverButton(51089,  "", 0, 104, 30, "Prestige Woodcutting", 0, 51090, 1);
+		addHoverButton(51086, "", 0, 104, 30, "Prestige Firemaking", 0, 51087, 1);
+		addHoveredButton(51087, 320, 104, 30, 51088);
+		addHoverButton(51089, "", 0, 104, 30, "Prestige Woodcutting", 0, 51090, 1);
 		addHoveredButton(51090, 321, 104, 30, 51091);
-		addHoverButton(51092,  "", 0, 104, 30, "Prestige Farming", 0, 51093, 1);
-		addHoveredButton(51093, 322, 104, 30, 51094);	
-		addHoverButton(51095,  "", 0, 104, 30, "Prestige Slayer", 0, 51096, 1);
-		addHoveredButton(51096, 323, 104, 30, 51097);	
+		addHoverButton(51092, "", 0, 104, 30, "Prestige Farming", 0, 51093, 1);
+		addHoveredButton(51093, 322, 104, 30, 51094);
+		addHoverButton(51095, "", 0, 104, 30, "Prestige Slayer", 0, 51096, 1);
+		addHoveredButton(51096, 323, 104, 30, 51097);
 		tab.totalChildren(74);
 		tab.child(0, 51001, 10, 2);
 		tab.child(1, 51002, 28, 160);
 		tab.child(2, 51003, 475, 8);
 		tab.child(3, 51004, 475, 8);
 		tab.child(4, 51032, 181, 37);
-		tab.child(5, 51033, 181, 37);	
+		tab.child(5, 51033, 181, 37);
 		tab.child(6, 51035, 181, 74);
 		tab.child(7, 51036, 181, 74);
 		tab.child(8, 51038, 181, 111);
@@ -1718,35 +1698,35 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(44, 51092, 390, 259);
 		tab.child(45, 51093, 390, 259);
 		tab.child(46, 51095, 286, 293);
-		tab.child(47, 51096, 286, 293);	
+		tab.child(47, 51096, 286, 293);
 		tab.child(48, 51006, 220, 10);
 		tab.child(49, 51007, 95, 275);
 		tab.child(50, 51008, 95, 290);
-		tab.child(51, 51009, 95, 305);	
+		tab.child(51, 51009, 95, 305);
 		tab.child(52, 51010, 235, 46);
 		tab.child(53, 51011, 235, 85);
 		tab.child(54, 51012, 235, 121);
 		tab.child(55, 51013, 235, 158);
 		tab.child(56, 51014, 235, 195);
 		tab.child(57, 51015, 235, 232);
-		tab.child(58, 51016, 235, 269);	
+		tab.child(58, 51016, 235, 269);
 		tab.child(59, 51017, 345, 46);
 		tab.child(60, 51018, 345, 85);
 		tab.child(61, 51019, 345, 121);
 		tab.child(62, 51020, 345, 158);
 		tab.child(63, 51021, 345, 195);
 		tab.child(64, 51022, 345, 232);
-		tab.child(65, 51023, 345, 269);	
+		tab.child(65, 51023, 345, 269);
 		tab.child(66, 51024, 450, 46);
 		tab.child(67, 51025, 450, 85);
 		tab.child(68, 51026, 450, 121);
 		tab.child(69, 51027, 450, 158);
 		tab.child(70, 51028, 450, 195);
 		tab.child(71, 51029, 450, 232);
-		tab.child(72, 51030, 450, 269);	
+		tab.child(72, 51030, 450, 269);
 		tab.child(73, 51031, 345, 303);
 	}
-	
+
 	/**
 	 * Friends tab
 	 * 
@@ -1792,7 +1772,7 @@ public class CustomInterfaces extends RSInterface {
 			list.childY[i] = list.childY[i] - 7;
 		}
 	}
-	
+
 	/**
 	 * Ignore tab
 	 * 
@@ -1831,9 +1811,10 @@ public class CustomInterfaces extends RSInterface {
 			list.childY[i] = list.childY[i] - 7;
 		}
 	}
-	
+
 	/**
 	 * Exp Counter
+	 * 
 	 * @param ataratix
 	 */
 	public static void expCounter(TextDrawingArea[] daniel) {
@@ -1860,9 +1841,10 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(8, 32810, 190, 165);
 		tab.child(9, 32811, 190, 190);
 	}
-	
+
 	/**
 	 * Chat Color
+	 * 
 	 * @param daniel
 	 */
 	public static void chatColor(TextDrawingArea[] daniel) {
@@ -1881,7 +1863,7 @@ public class CustomInterfaces extends RSInterface {
 		addHoverButton(37516, 268, 30, 30, "Select grey", 0, 37517, 1);
 		addHoveredButton(37517, 269, 30, 30, 37518);
 		addHoverButton(37519, 270, 30, 30, "Select red", 0, 37520, 1);
-		addHoveredButton(37520,271, 30, 30, 37521);
+		addHoveredButton(37520, 271, 30, 30, 37521);
 		addHoverButton(37522, 272, 30, 30, "Select orange", 0, 37523, 1);
 		addHoveredButton(37523, 273, 30, 30, 37524);
 		addHoverButton(37525, 274, 30, 30, "Select yellow", 0, 37526, 1);
@@ -1932,7 +1914,6 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(30, 37544, 364, 219);
 	}
 
-	
 	public static void itemDetails(TextDrawingArea[] ataratix) {
 		RSInterface tab = addInterface(59750);
 		addSprite(59751, 456);
@@ -1942,7 +1923,7 @@ public class CustomInterfaces extends RSInterface {
 		addText(59755, "</col>Tradeable: @gre@True", 0xff9933, true, true, -1, ataratix, 0);
 		addText(59756, "</col>Noted: @gre@False", 0xff9933, true, true, -1, ataratix, 0);
 		itemDisplay(59757, 30, 10, 5, 5, "Complain");
-		addHoverText(59758, "-> Back <-" , "Go back to drop table", ataratix, 0, 0xff9933, true, true, 300);
+		addHoverText(59758, "-> Back <-", "Go back to drop table", ataratix, 0, 0xff9933, true, true, 300);
 		tab.totalChildren(8);
 		tab.child(0, 59751, 130, 100);
 		tab.child(1, 59752, 295, 115);
@@ -1953,9 +1934,10 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(6, 59757, 150, 143);
 		tab.child(7, 59758, 145, 205);
 	}
-	
+
 	/**
 	 * Monster guide
+	 * 
 	 * @param ataratix
 	 */
 	public static void dropTable(TextDrawingArea[] ataratix) {
@@ -1963,17 +1945,19 @@ public class CustomInterfaces extends RSInterface {
 		addSprite(59801, 16);
 		addHoverButton(59802, 454, 17, 17, "Close", 250, 59803, 3);
 		addHoveredButton(59803, 455, 17, 17, 59804);
-		addText(59805, "Monster Drop Guide", 0xff9933, true, true, -1, ataratix, 2);	
+		addText(59805, "Monster Drop Guide", 0xff9933, true, true, -1, ataratix, 2);
 		addText(59806, "Name:", 0xff9933, true, false, -1, ataratix, 0);
 		addText(59807, "Level:", 0xff9933, true, false, -1, ataratix, 0);
-		addText(59818, "", 0xff9933, true, false, -1, ataratix, 0);	
-		String[] table = { "Always", "Common", "Uncommon", "Rare", "Very Rare" };	
+		addText(59818, "", 0xff9933, true, false, -1, ataratix, 0);
+		String[] table = { "Always", "Common", "Uncommon", "Rare", "Very Rare" };
 		for (int i = 0; i < table.length; i++) {
-			addText(59808 + i, table[i], 0x000000, true, false, -1, ataratix, 0);			
-		}	
+			addText(59808 + i, table[i], 0x000000, true, false, -1, ataratix, 0);
+		}
 		itemContainer(59813, 30, 8, 5, 50, false, "Details");
-		addInputField(59800, 59814, 15, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 136, 25, false, false, "Search for item");		
-		addInputField(59800, 59815, 15, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 136, 25, false, false, "Search for Npc ");
+		addInputField(59800, 59814, 15, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 136, 25, false, false,
+				"Search for item");
+		addInputField(59800, 59815, 15, 0x332E24, 0x4D4636, 0x383631, 0x474540, "", 136, 25, false, false,
+				"Search for Npc ");
 
 		tab.totalChildren(16);
 		tab.child(0, 59801, 15, 2);
@@ -1992,7 +1976,7 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(13, 59900, -230, 97);
 		tab.child(14, 59818, 334, 63);
 		tab.child(15, 59815, 24, 65);
-		
+
 		RSInterface scrollInterface = addTabInterface(59817);
 		scrollInterface.width = 305;
 		scrollInterface.height = 208;
@@ -2001,7 +1985,7 @@ public class CustomInterfaces extends RSInterface {
 		addSprite(59819, 458);
 		setBounds(59819, 0, 0, 0, scrollInterface);
 		setBounds(59813, 13, 4, 1, scrollInterface);
-		
+
 		scrollInterface = addTabInterface(59900);
 		scrollInterface.width = 377;
 		scrollInterface.height = 231;
@@ -2009,14 +1993,15 @@ public class CustomInterfaces extends RSInterface {
 		setChildren(50, scrollInterface);
 		int y = 0;
 		for (int i = 0; i < 50; i++) {
-			addHoverText(59901 + i, "" , "", ataratix, 0, 0xCF4F0A, false, true, 300);
+			addHoverText(59901 + i, "", "", ataratix, 0, 0xCF4F0A, false, true, 300);
 			setBounds(59901 + i, 260, y + 4, i, scrollInterface);
 			y += 20;
 		}
 	}
-	
+
 	/**
 	 * Mystery Box
+	 * 
 	 * @param daniel
 	 */
 	public static void mysteryBox(TextDrawingArea[] daniel) {
@@ -2031,14 +2016,17 @@ public class CustomInterfaces extends RSInterface {
 		addText(17015, "", daniel, 0, 0xF7AA25, true, true);
 		addHoverButton(47267, 21, 16, 16, "Close", -1, 47268, 1);
 		addHoveredButton(47268, 22, 16, 16, 47269);
-		addText(17008, "Mystery Box is a gambling minigame where you can bet 1 credit.", daniel, 0, 0xF7AA25, true, true);
-		addText(17009, "Rewards can vary from items worth @gre@1,000</col> - @gre@100,000,000</col> coins!", daniel, 0, 0xF7AA25, true, true);
+		addText(17008, "Mystery Box is a gambling minigame where you can bet 1 credit.", daniel, 0, 0xF7AA25, true,
+				true);
+		addText(17009, "Rewards can vary from items worth @gre@1,000</col> - @gre@100,000,000</col> coins!", daniel, 0,
+				0xF7AA25, true, true);
 		addText(17010, "Good luck, may the odds be ever in your favor.", daniel, 0, 0xF7AA25, true, true);
-		addHoverText(17011, "Purchase more credits", "Purchase Ataratix credits", daniel, 0, 0xF7AA25, false, true, 168);
-		
+		addHoverText(17011, "Purchase more credits", "Purchase Ataratix credits", daniel, 0, 0xF7AA25, false, true,
+				168);
+
 		addText(17012, "Play", daniel, 2, 0xF7AA25, true, true);
 		rsinterface.totalChildren(15);
-		
+
 		rsinterface.child(0, 17001, 14, 5);
 		rsinterface.child(1, 17002, 240, 190);
 		rsinterface.child(2, 17003, 260, 10);
@@ -2055,9 +2043,10 @@ public class CustomInterfaces extends RSInterface {
 		rsinterface.child(13, 17015, 255, 300);
 		rsinterface.child(14, 17012, 120, 130);
 	}
-	
+
 	/**
 	 * Genie
+	 * 
 	 * @param daniel
 	 */
 	public static void genie(TextDrawingArea[] daniel) {
@@ -2116,9 +2105,10 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(24, 59533, 265, 223);
 		tab.child(25, 59534, 255, 122);
 	}
-	
+
 	/**
 	 * Barrows
+	 * 
 	 * @param daniel
 	 */
 	public static void barrows(TextDrawingArea[] daniel) {
@@ -2144,6 +2134,7 @@ public class CustomInterfaces extends RSInterface {
 
 	/**
 	 * Price Checker
+	 * 
 	 * @param daniel
 	 */
 	public static void priceChecker(TextDrawingArea[] daniel) {
@@ -2242,7 +2233,7 @@ public class CustomInterfaces extends RSInterface {
 		RSInterface rsinterface = addInterface(17100);
 		addSprite(17101, 242);
 		addHoverButton(17102, 21, 15, 15, "Close", 250, 10601, 3);
-		addHoveredButton(10601, 22, 15, 15, 10602);		
+		addHoveredButton(10601, 22, 15, 15, 10602);
 		addText(17103, "Items Kept on Death", daniel, 2, 0xff981f);
 		addText(17104, "Items you keep on death if not skulled:", daniel, 0, 0xff981f);
 		addText(17105, "Items you loose on death if not skulled:", daniel, 0, 0xff981f);
@@ -2395,7 +2386,7 @@ public class CustomInterfaces extends RSInterface {
 		setBounds(31002, 45, 5, 1, tab);
 		setBounds(31003, -6, 25, 2, tab);
 		addHoverButton(31004, 13, 25, 25, "Back to Quest tab", -1, 31005, 1);
-		addHoveredButton(31005, 14, 25, 25, 31096);		
+		addHoveredButton(31005, 14, 25, 25, 31096);
 		RSInterface scrollInterface = addTabInterface(31003);
 		scrollInterface.width = 179;
 		scrollInterface.height = 236;
@@ -2414,7 +2405,6 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(4, 31005, 160, 0);
 	}
 
-	
 	/**
 	 * Shop interface
 	 * 
@@ -2424,10 +2414,10 @@ public class CustomInterfaces extends RSInterface {
 		RSInterface rsinterface = addInterface(3824);
 		setChildren(8 + 36, rsinterface);
 		addSprite(3825, 75);
-		
+
 		addHoverButton(3902, 17, 21, 21, "Close store", 0, 3826, 1);
 		addHoveredButton(3826, 18, 21, 21, 3827);
-		
+
 		addText(19679, "", 0xff981f, false, true, 52, ataratix, 1);
 		addText(19680, "", 0xbf751d, false, true, 52, ataratix, 1);
 		addButton(19681, 2, "Interfaces/Shop/SHOP", 0, 0, "", 1);
@@ -2785,8 +2775,7 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(21, 64029, 315, 65);
 		tab.child(22, 64030, 110, 117);
 		tab.child(23, 64031, 40, 140);
-		
-		
+
 		tab.child(24, 64032, 40, 180);
 		tab.child(25, 64033, 40, 200);
 		tab.child(26, 64034, 40, 220);
@@ -2972,7 +2961,6 @@ public class CustomInterfaces extends RSInterface {
 		}
 	}
 
-	
 	/**
 	 * Option tab
 	 * 
@@ -3053,14 +3041,14 @@ public class CustomInterfaces extends RSInterface {
 		tab.child(31, 36026, 135, 208);
 		tab.child(32, 36027, 135, 208);
 		tab.child(33, 36030, 75, 153);
-		/*tab.child(34, 36032, 10, 141);
-		
-		tab.child(35, 36033, 38, 143);
-		tab.child(36, 36034, 70, 143);
-		tab.child(37, 36035, 102, 143);
-		tab.child(38, 36036, 134, 143);
-		tab.child(39, 36037, 156, 143);*/
-		
+		/*
+		 * tab.child(34, 36032, 10, 141);
+		 * 
+		 * tab.child(35, 36033, 38, 143); tab.child(36, 36034, 70, 143); tab.child(37,
+		 * 36035, 102, 143); tab.child(38, 36036, 134, 143); tab.child(39, 36037, 156,
+		 * 143);
+		 */
+
 	}
 
 	/**
@@ -3083,12 +3071,14 @@ public class CustomInterfaces extends RSInterface {
 		addSprite(id, 108);
 		addHoverButton(id + 1, method207(2, aClass44, "miscgraphics2"), 21, 21, "Close", 250, id + 2, 3);
 		addHoveredButton(id + 2, method207(3, aClass44, "miscgraphics2"), 21, 21, id + 3);
-		addContainer(5382, 109, 8, 44, new String[] { "Withdraw-1", "Withdraw-5", "Withdraw-10", "Withdraw-All", "Withdraw-X", null, "Withdraw-All but one" });
+		addContainer(5382, 109, 8, 44, new String[] { "Withdraw-1", "Withdraw-5", "Withdraw-10", "Withdraw-All",
+				"Withdraw-X", null, "Withdraw-All but one" });
 		addConfigButton(id + 4, id + 4, button1, button2, 36, 36, "Search", 1, 5, 1012);
 		interfaceCache[id + 4].contentType = 555;
 		addButton(id + 5, button2, button1, "Deposit inventory", 36, 36);
 		addButton(id + 6, button2, button1, "Deposit worn equipment", 36, 36);
-		addButton(id + 7, method207(0, aClass44, "miscgraphics3"), method207(0, aClass44, "miscgraphics3"), "Show menu", 25, 25);
+		addButton(id + 7, method207(0, aClass44, "miscgraphics3"), method207(0, aClass44, "miscgraphics3"), "Show menu",
+				25, 25);
 		addSprite(id + 8, 118);
 		addSprite(id + 9, 116);
 		addSprite(id + 10, 117);
@@ -3118,12 +3108,15 @@ public class CustomInterfaces extends RSInterface {
 		bank.child(child++, id + 55, 30, 20);
 
 		for (int tab = 0; tab < 40; tab += 4) {
-			addButton(id + 13 + tab, Client.cacheSprite[111], Client.cacheSprite[111], "Collapse " + (tab == 0 ? "@or2@all tabs" : "tab @or2@" + (tab / 4)), 39, 40);
+			addButton(id + 13 + tab, Client.cacheSprite[111], Client.cacheSprite[111],
+					"Collapse " + (tab == 0 ? "@or2@all tabs" : "tab @or2@" + (tab / 4)), 39, 40);
 			int[] array = { 21, (tab / 4), 0 };
 			if (tab / 4 == 0) {
 				array = new int[] { 5, 1000, 0 };
 			}
-			addHoverConfigButton(id + 14 + tab, id + 15 + tab, 109, 111, 39, 40, tab == 0 ? "View all" : "New tab", new int[] { 1, tab / 4 == 0 ? 1 : 3 }, new int[] { (tab / 4), 0 }, new int[][] { { 5, 1000, 0 }, array });
+			addHoverConfigButton(id + 14 + tab, id + 15 + tab, 109, 111, 39, 40, tab == 0 ? "View all" : "New tab",
+					new int[] { 1, tab / 4 == 0 ? 1 : 3 }, new int[] { (tab / 4), 0 },
+					new int[][] { { 5, 1000, 0 }, array });
 			addHoveredConfigButton(interfaceCache[id + 14 + tab], id + 15 + tab, id + 16 + tab, 110, 111);
 			interfaceCache[id + 14 + tab].parentID = id;
 			interfaceCache[id + 15 + tab].parentID = id;
@@ -3254,8 +3247,9 @@ public class CustomInterfaces extends RSInterface {
 		addText(17230, "Select your quick prayers:", ataratix, 0, 0xFF981F, false, true);
 		for (int i = 17202, j = 630; i <= 17228 || j <= 656; i++, j++) {
 			addConfigButton(i, 17200, 79, 78, 14, 15, "Select prayer", 0, 1, j);
-		    // addConfigButton(j, 17200, 2, 1, "QuickPrayer/Sprite", 14, 15, "Select", 0, 1, k);
-		      
+			// addConfigButton(j, 17200, 2, 1, "QuickPrayer/Sprite", 14, 15, "Select", 0, 1,
+			// k);
+
 		}
 		addHoverButton(17231, 446, 190, 24, "Confirm Selection", -1, 17232, 1);
 		addHoveredButton(17232, 447, 190, 24, 17233);
@@ -3447,17 +3441,17 @@ public class CustomInterfaces extends RSInterface {
 		addHoveredButton(18130, 41, 72, 32, 18131);
 		addHoverButton(18132, 40, 72, 32, "Clan Setup", -1, 18133, 5);
 		addHoveredButton(18133, 41, 72, 32, 18134);
-		
+
 		addButtons(18250, 31, "Toggle lootshare", 18253, 1);
 		drawTooltip(18253, "Toggle-Lootshare");
-		
+
 		addText(18135, "Join/Leave", ataratix, 0, 0xff9b00, true, true);
 		addText(18136, "Clan Setup", ataratix, 0, 0xff9b00, true, true);
 		addSprite(18137, 42);
 		addText(18138, "Clan Chat", ataratix, 2, 0xff9b00, true, true);
 		addText(18139, "Talking in: Not in chat", ataratix, 0, 0xff9b00, false, true);
 		addText(18140, "Owner: None", ataratix, 0, 0xff9b00, false, true);
-		
+
 		addText(18252, "(0/100)", ataratix, 0, 0xff9b00, false, true);
 		tab.totalChildren(14);
 		tab.child(0, 18137, 3, 57);
@@ -3522,9 +3516,11 @@ public class CustomInterfaces extends RSInterface {
 		addText(43703, "Clan Setup", ataratix, 2, 0xFF981F, true, true);
 		rsi.child(count++, 43703, 256, 26);
 		/* Setup buttons */
-		String[] titles = { "Clan name:", "Who can enter chat?", "Who can talk on chat?", "Who can kick on chat?", "Who can ban on chat?" };
+		String[] titles = { "Clan name:", "Who can enter chat?", "Who can talk on chat?", "Who can kick on chat?",
+				"Who can ban on chat?" };
 		String[] defaults = { "Chat Disabled", "Anyone", "Anyone", "Anyone", "Anyone" };
-		String[] whoCan = { "Anyone", "Recruit", "Corporal", "Sergeant", "Lieutenant", "Captain", "General", "Only Me" };
+		String[] whoCan = { "Anyone", "Recruit", "Corporal", "Sergeant", "Lieutenant", "Captain", "General",
+				"Only Me" };
 		for (int index = 0, id = 43704, y = 50; index < titles.length; index++, id += 3, y += 40) {
 			addButton(id, 36, "");
 			interfaceCache[id].atActionType = 0;
@@ -3625,7 +3621,7 @@ public class CustomInterfaces extends RSInterface {
 		addHoverButton(29404, 84, 25, 25, "Achievement diary", -1, 29405, 1);
 		addHoveredButton(29405, 85, 25, 25, 29406);
 		addHoverButton(29410, 351, 15, 15, "Refresh", -1, 29411, 1);
-		addHoveredButton(29411, 352, 15, 15, 29412);				
+		addHoveredButton(29411, 352, 15, 15, 29412);
 		addHoverText(29413, "", "", ataratix, 0, 0x47B320, false, true, 50);
 		tab.scrollMax = 0;
 		tab.totalChildren(11);
@@ -3657,5 +3653,5 @@ public class CustomInterfaces extends RSInterface {
 			y += 18;
 		}
 	}
-	
+
 }

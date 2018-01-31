@@ -2,31 +2,31 @@
  * 
  * @author Zion
  * 
- * This class stores the account data
+ *         This class stores the account data
  * 
  */
 public class AccountData {
-	
+
 	/**
 	 * Stores the account rank
 	 */
 	public int rank;
-	
+
 	/**
 	 * Stores the amount of uses of the account
 	 */
 	public int uses;
-	
+
 	/**
 	 * Stores account username
 	 */
 	public String username;
-	
+
 	/**
 	 * Stores account password
 	 */
 	public String password;
-	
+
 	/**
 	 * Creates the default account data
 	 * 
@@ -39,7 +39,7 @@ public class AccountData {
 		this.username = username;
 		this.password = password;
 	}
-	
+
 	/**
 	 * Stores the new account data
 	 * 

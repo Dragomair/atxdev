@@ -2,33 +2,25 @@
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 
-final class MouseDetection
-		implements Runnable
-{
+final class MouseDetection implements Runnable {
 
-	public void run()
-	{
-		while(running) 
-		{
-			synchronized(syncObject)
-			{
-				if(coordsIndex < 500)
-				{
+	public void run() {
+		while (running) {
+			synchronized (syncObject) {
+				if (coordsIndex < 500) {
 					coordsX[coordsIndex] = clientInstance.mouseX;
 					coordsY[coordsIndex] = clientInstance.mouseY;
 					coordsIndex++;
 				}
 			}
-			try
-			{
+			try {
 				Thread.sleep(50L);
+			} catch (Exception _ex) {
 			}
-			catch(Exception _ex) { }
 		}
 	}
 
-	public MouseDetection(Client client1)
-	{
+	public MouseDetection(Client client1) {
 		syncObject = new Object();
 		coordsY = new int[500];
 		running = true;

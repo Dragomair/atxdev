@@ -34,7 +34,7 @@ public class OverlayFloor {
 	public int anInt399;
 
 	public static void unpackConfig(StreamLoader streamLoader) {
-        ByteBuffer bb = ByteBuffer.wrap(streamLoader.getDataForName("flo2.dat"));
+		ByteBuffer bb = ByteBuffer.wrap(streamLoader.getDataForName("flo2.dat"));
 		int count = bb.getShort();
 		overlayFloor = new OverlayFloor[count];
 		for (int i = 0; i < count; i++) {
@@ -51,9 +51,7 @@ public class OverlayFloor {
 			if (attributeId == 0) {
 				break;
 			} else if (attributeId == 1) {
-				rgb = ((byteBuffer.get() & 0xff) << 16)
-						+ ((byteBuffer.get() & 0xff) << 8)
-						+ (byteBuffer.get() & 0xff);
+				rgb = ((byteBuffer.get() & 0xff) << 16) + ((byteBuffer.get() & 0xff) << 8) + (byteBuffer.get() & 0xff);
 				method262(rgb);
 			} else if (attributeId == 2) {
 				textureId = byteBuffer.get() & 0xff;
@@ -69,8 +67,7 @@ public class OverlayFloor {
 			} else if (attributeId == 6) {
 
 			} else if (attributeId == 7) {
-				int_7 = ((byteBuffer.get() & 0xff) << 16)
-						+ ((byteBuffer.get() & 0xff) << 8)
+				int_7 = ((byteBuffer.get() & 0xff) << 16) + ((byteBuffer.get() & 0xff) << 8)
 						+ (byteBuffer.get() & 0xff);
 			} else if (attributeId == 8) {
 
@@ -83,8 +80,7 @@ public class OverlayFloor {
 			} else if (attributeId == 12) {
 				boolean_12 = true;
 			} else if (attributeId == 13) {
-				int_13 = ((byteBuffer.get() & 0xff) << 16)
-						+ ((byteBuffer.get() & 0xff) << 8)
+				int_13 = ((byteBuffer.get() & 0xff) << 16) + ((byteBuffer.get() & 0xff) << 8)
 						+ (byteBuffer.get() & 0xff);
 			} else if (attributeId == 14) {
 				int_14 = byteBuffer.get() & 0xff;
@@ -96,8 +92,7 @@ public class OverlayFloor {
 			} else if (attributeId == 16) {
 				int_16 = byteBuffer.get() & 0xff;
 			} else {
-				System.err.println("[OverlayFloor] Missing AttributeId: "
-						+ attributeId);
+				System.err.println("[OverlayFloor] Missing AttributeId: " + attributeId);
 			}
 		}
 	}

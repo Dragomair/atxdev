@@ -3,7 +3,7 @@ public final class SpotAnim {
 	public static void unpackConfig(StreamLoader streamLoader) {
 		Stream stream = new Stream(streamLoader.getDataForName("spotanim.dat"));
 		int length = stream.readUnsignedWord();
-		System.out.println("Graphics Loaded: "+length);
+		System.out.println("Graphics Loaded: " + length);
 		if (cache == null)
 			cache = new SpotAnim[length + 50000];
 		for (int j = 0; j < length; j++) {
@@ -43,8 +43,7 @@ public final class SpotAnim {
 					anIntArray409[k] = stream.readUnsignedWord();
 				}
 			} else
-				System.out.println("Error unrecognised spotanim config code: "
-						+ i);
+				System.out.println("Error unrecognised spotanim config code: " + i);
 		} while (true);
 	}
 

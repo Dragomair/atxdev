@@ -10,7 +10,7 @@ public class Configuration {
 	 * Check to enable Economy world
 	 */
 	public static boolean economyWorld = true;
-	
+
 	/**
 	 * Check to enable snow
 	 */
@@ -120,7 +120,7 @@ public class Configuration {
 	 * Check to enable Money Pouch
 	 */
 	public static boolean enablePouch;
-	
+
 	/**
 	 * Check to enable Prestige colors
 	 */

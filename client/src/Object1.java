@@ -2,12 +2,9 @@
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 
+public final class Object1 {
 
-public final class Object1
-{
-
-	public Object1()
-	{
+	public Object1() {
 	}
 
 	int anInt273;

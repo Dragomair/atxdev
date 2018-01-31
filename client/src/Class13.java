@@ -156,7 +156,7 @@ final class Class13 {
 			byte0 = method228(class32);
 			byte0 = method228(class32);
 			byte0 = method229(class32);
-			class32.aBoolean575 = byte0 != 0; 
+			class32.aBoolean575 = byte0 != 0;
 			class32.anInt580 = 0;
 			byte0 = method228(class32);
 			class32.anInt580 = class32.anInt580 << 8 | byte0 & 0xff;
@@ -239,7 +239,8 @@ final class Class13 {
 						byte8 = class32.aByteArrayArray596[l3][l1];
 				}
 
-				method232(class32.anIntArrayArray597[l3], class32.anIntArrayArray598[l3], class32.anIntArrayArray599[l3], class32.aByteArrayArray596[l3], byte8, i, i4);
+				method232(class32.anIntArrayArray597[l3], class32.anIntArrayArray598[l3],
+						class32.anIntArrayArray599[l3], class32.aByteArrayArray596[l3], byte8, i, i4);
 				class32.anIntArray600[l3] = byte8;
 			}
 
@@ -345,7 +346,8 @@ final class Class13 {
 						class32.anIntArray593[l10]++;
 						for (; l10 > 0; l10--) {
 							class32.anIntArray593[l10]--;
-							class32.aByteArray592[class32.anIntArray593[l10]] = class32.aByteArray592[(class32.anIntArray593[l10 - 1] + 16) - 1];
+							class32.aByteArray592[class32.anIntArray593[l10]] = class32.aByteArray592[(class32.anIntArray593[l10
+									- 1] + 16) - 1];
 						}
 
 						class32.anIntArray593[0]--;

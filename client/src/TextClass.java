@@ -1,9 +1,9 @@
 final class TextClass {
-	
+
 	public static String[] splitString(RSFont font, String prefix, String string, int maxWidth, boolean ranked) {
 		maxWidth -= font.getTextWidth(prefix) + (ranked ? 14 : 0);
 		if (font.getTextWidth(prefix + string) + (ranked ? 14 : 0) <= maxWidth) {
-			return new String[]{ string };
+			return new String[] { string };
 		}
 		String line = "";
 		String[] cut = new String[2];
@@ -48,23 +48,25 @@ final class TextClass {
 				l += (27 + c) - 48;
 		}
 
-		for (; l % 37L == 0L && l != 0L; l /= 37L);
+		for (; l % 37L == 0L && l != 0L; l /= 37L)
+			;
 		return l;
 	}
-	
+
 	public static String capitalize(String s) {
-        for (int i = 0; i < s.length(); i++) {
-            if (i == 0) {
-                s = String.format("%s%s", Character.toUpperCase(s.charAt(0)), s.substring(1));
-            }
-            if (!Character.isLetterOrDigit(s.charAt(i))) {
-                if (i + 1 < s.length()) {
-                    s = String.format("%s%s%s", s.subSequence(0, i + 1),  Character.toUpperCase(s.charAt(i + 1)), s.substring(i + 2));
-                }
-            }
-        }
-        return s;
-    }
+		for (int i = 0; i < s.length(); i++) {
+			if (i == 0) {
+				s = String.format("%s%s", Character.toUpperCase(s.charAt(0)), s.substring(1));
+			}
+			if (!Character.isLetterOrDigit(s.charAt(i))) {
+				if (i + 1 < s.length()) {
+					s = String.format("%s%s%s", s.subSequence(0, i + 1), Character.toUpperCase(s.charAt(i + 1)),
+							s.substring(i + 2));
+				}
+			}
+		}
+		return s;
+	}
 
 	public static String nameForLong(long l) {
 		try {
@@ -125,14 +127,9 @@ final class TextClass {
 		return stringbuffer.toString();
 	}
 
-	private static final char[] validChars = {
-		' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
-		'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-		't', 'u', 'v', 'w', 'x', 'y', 'z',
-		'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-		'!', '?', '.', ',', ':', ';', '(', ')', '-', '&',
-		'*', '\\', '\'', '@', '#', '+', '=', '\243', '$',
-		'%', '"', '[', ']', '>', '<', '_', '^'
-	};
+	private static final char[] validChars = { ' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+			'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7',
+			'8', '9', '!', '?', '.', ',', ':', ';', '(', ')', '-', '&', '*', '\\', '\'', '@', '#', '+', '=', '\243',
+			'$', '%', '"', '[', ']', '>', '<', '_', '^' };
 
 }

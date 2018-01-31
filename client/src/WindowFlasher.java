@@ -5,7 +5,7 @@ public class WindowFlasher {
 
 	private Dialog dialog;
 	private Window window;
-	
+
 	/**
 	 * Creates the window flash object
 	 * 
@@ -18,7 +18,7 @@ public class WindowFlasher {
 		dialog.setSize(0, 0);
 		dialog.setModal(false);
 		dialog.addWindowFocusListener(new WindowAdapter() {
-			
+
 			@Override
 			public void windowGainedFocus(WindowEvent event) {
 				window.requestFocus();
@@ -27,7 +27,7 @@ public class WindowFlasher {
 			}
 		});
 		window.addWindowFocusListener(new WindowAdapter() {
-			
+
 			@Override
 			public void windowGainedFocus(WindowEvent event) {
 				dialog.setVisible(false);
@@ -35,7 +35,7 @@ public class WindowFlasher {
 			}
 		});
 	}
-	
+
 	/**
 	 * Flashes the windows task-bar icon, If the windows not focused
 	 */
@@ -44,9 +44,9 @@ public class WindowFlasher {
 			if (dialog.isVisible()) {
 				dialog.setVisible(false);
 			}
-            dialog.setLocation(0, 0);
-            dialog.setLocationRelativeTo(window);
-            dialog.setVisible(true);
+			dialog.setLocation(0, 0);
+			dialog.setLocationRelativeTo(window);
+			dialog.setVisible(true);
 		}
 	}
 }

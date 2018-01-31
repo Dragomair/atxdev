@@ -24,7 +24,7 @@ public final class ObjectDef {
 				class46.originalModelColors = new int[] { 117, 127, 127, 96, 96 };
 			return class46;
 		}
-		
+
 		switch (i) {
 		// hardcode objects that don't have any actions.
 		case 26621:
@@ -53,7 +53,7 @@ public final class ObjectDef {
 		case 8555:
 		case 8556:
 		case 8557:
-		case 20973:			
+		case 20973:
 		case 26606:
 		case 26611:
 		case 26613:
@@ -73,7 +73,7 @@ public final class ObjectDef {
 		case 26602:
 			class46.hasActions = true;
 			break;
-		case 22472://Tab Creation
+		case 22472:// Tab Creation
 			class46.name = "Tablet";
 			class46.actions = new String[5];
 			class46.actions[0] = "Create";
@@ -114,8 +114,8 @@ public final class ObjectDef {
 			class46.actions[2] = "Info";
 			class46.hasActions = true;
 			break;
-			
-		case 2072://Weapon Game Crate
+
+		case 2072:// Weapon Game Crate
 			class46.name = "Game Crate";
 			class46.actions = new String[5];
 			class46.actions[0] = "Search";
@@ -129,54 +129,54 @@ public final class ObjectDef {
 			class46.actions[1] = "Edit Shop";
 			class46.actions[2] = "Explore Shops";
 			break;
-			
-        case 18772://Mystery box
+
+		case 18772:// Mystery box
 			class46.name = "Mystery Box";
-            class46.actions = new String[5];
-            class46.actions[0] = "Open";
-            break;
-			
-        case 2732://Fires
-            class46.actions = new String[5];
-            class46.actions[0] = "Add-Logs";
-            class46.actions[1] = "Change-color";
-            break;
-            
-        case 574:
-        	class46.name = "Magic book";
-        	class46.actions = new String[5];
-        	class46.actions[0] = "Change";
-        	break;
-        	
-        case 575:
-        	class46.name = "Altar";
-        	class46.actions = new String[5];
-        	class46.actions[0] = "Restore";
-        	break;
-        	
-        case 576:
-        	class46.name = "Highscores";
-        	class46.actions = new String[5];
-        	class46.actions[0] = "View";
-        	break;
-        	
-        case 13618:
-        	class46.name = "Wyverns";
-        	class46.actions = new String[5];
-        	class46.actions[0] = "Teleport-to";
-        	break;
-        	
-        case 13619:
-        	class46.name = "Fountain of Rune";
-        	class46.actions = new String[5];
-        	class46.actions[0] = "Teleport-to";
-        	break;
-            
-        case 4090:
-        	class46.name = "Blood altar";
-        	class46.actions = new String[5];
-        	class46.actions[0] = "Craft";
-        	break;
+			class46.actions = new String[5];
+			class46.actions[0] = "Open";
+			break;
+
+		case 2732:// Fires
+			class46.actions = new String[5];
+			class46.actions[0] = "Add-Logs";
+			class46.actions[1] = "Change-color";
+			break;
+
+		case 574:
+			class46.name = "Magic book";
+			class46.actions = new String[5];
+			class46.actions[0] = "Change";
+			break;
+
+		case 575:
+			class46.name = "Altar";
+			class46.actions = new String[5];
+			class46.actions[0] = "Restore";
+			break;
+
+		case 576:
+			class46.name = "Highscores";
+			class46.actions = new String[5];
+			class46.actions[0] = "View";
+			break;
+
+		case 13618:
+			class46.name = "Wyverns";
+			class46.actions = new String[5];
+			class46.actions[0] = "Teleport-to";
+			break;
+
+		case 13619:
+			class46.name = "Fountain of Rune";
+			class46.actions = new String[5];
+			class46.actions[0] = "Teleport-to";
+			break;
+
+		case 4090:
+			class46.name = "Blood altar";
+			class46.actions = new String[5];
+			class46.actions[0] = "Craft";
+			break;
 
 		}
 		if (ClientConstants.DEBUG_MODE) {
@@ -315,8 +315,9 @@ public final class ObjectDef {
 			int l = varBit.anInt650;
 			int i1 = Client.anIntArray1232[l - k];
 			i = clientInstance.variousSettings[j] >> k & i1;
-//			System.out.println(j + " " + k + " " + i1 + " " + clientInstance.variousSettings[j] + " " + i);
-//			System.out.println(Arrays.toString(childrenIDs));
+			// System.out.println(j + " " + k + " " + i1 + " " +
+			// clientInstance.variousSettings[j] + " " + i);
+			// System.out.println(Arrays.toString(childrenIDs));
 		} else if (anInt749 != -1)
 			i = clientInstance.variousSettings[anInt749];
 		if (i < 0 || i >= childrenIDs.length || childrenIDs[i] == -1)
@@ -391,7 +392,8 @@ public final class ObjectDef {
 		flag = anInt748 != 128 || anInt772 != 128 || anInt740 != 128;
 		boolean flag2;
 		flag2 = anInt738 != 0 || anInt745 != 0 || anInt783 != 0;
-		Model model_3 = new Model(modifiedModelColors == null, SequenceFrame.method532(k), l == 0 && k == -1 && !flag && !flag2, model);
+		Model model_3 = new Model(modifiedModelColors == null, SequenceFrame.method532(k),
+				l == 0 && k == -1 && !flag && !flag2, model);
 		if (k != -1) {
 			model_3.method469();
 			model_3.method470(k);

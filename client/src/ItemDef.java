@@ -1,13 +1,11 @@
 
-
-
 public final class ItemDef {
-	
+
 	public static ItemDef forID(int i) {
 		for (int j = 0; j < 10; j++)
 			if (cache[j].id == i)
 				return cache[j];
-		
+
 		cacheIndex = (cacheIndex + 1) % 10;
 		ItemDef itemDef = cache[cacheIndex];
 		stream.currentOffset = streamIndices[i];
@@ -15,136 +13,136 @@ public final class ItemDef {
 		itemDef.setDefaults();
 		itemDef.readValues(stream);
 		if (!isMembers && itemDef.membersObject) {
-            itemDef.name = "Members Object";
-            itemDef.description = "Login to a members' server to use this object.".getBytes();
-            itemDef.groundActions = null;
-            itemDef.itemActions = null;
-            itemDef.team = 0;
-        }
-		/* Customs items  */
+			itemDef.name = "Members Object";
+			itemDef.description = "Login to a members' server to use this object.".getBytes();
+			itemDef.groundActions = null;
+			itemDef.itemActions = null;
+			itemDef.team = 0;
+		}
+		/* Customs items */
 		switch (i) {
-			
-			case 13190:
-				itemDef.name = "10 Credits voucher";
-				itemDef.itemActions = new String[5];
-				itemDef.itemActions[0] = "Redeem";
-				itemDef.modelID = 29210;
-				itemDef.modelZoom = 2300;
-				itemDef.modelRotationY = 512;
-				itemDef.modelOffset1 = 3;
-				itemDef.modelOffset2 = 1;
-				break;
-				
-			case 13191:
-				itemDef.name = "30 Credits voucher";
-				itemDef.itemActions = new String[5];
-				itemDef.itemActions[0] = "Redeem";
-				itemDef.modelID = 29210;
-				itemDef.modelZoom = 2300;
-				itemDef.modelRotationY = 512;
-				itemDef.modelOffset1 = 3;
-				itemDef.modelOffset2 = 1;
-				break;
-				
-			case 13192:
-				itemDef.name = "50 Credits voucher";
-				itemDef.itemActions = new String[5];
-				itemDef.itemActions[0] = "Redeem";
-				itemDef.modelID = 29210;
-				itemDef.modelZoom = 2300;
-				itemDef.modelRotationY = 512;
-				itemDef.modelOffset1 = 3;
-				itemDef.modelOffset2 = 1;
-				break;
-				
-			case 13193:
-				itemDef.name = "80 Credits voucher";
-				itemDef.itemActions = new String[5];
-				itemDef.itemActions[0] = "Redeem";
-				itemDef.modelID = 29210;
-				itemDef.modelZoom = 2300;
-				itemDef.modelRotationY = 512;
-				itemDef.modelOffset1 = 3;
-				itemDef.modelOffset2 = 1;
-				break;
-				
-			case 13194:
-				itemDef.name = "100 Credits voucher";
-				itemDef.itemActions = new String[5];
-				itemDef.itemActions[0] = "Redeem";
-				itemDef.modelID = 29210;
-				itemDef.modelZoom = 2300;
-				itemDef.modelRotationY = 512;
-				itemDef.modelOffset1 = 3;
-				itemDef.modelOffset2 = 1;
-				itemDef.stackable = false;
-				break;
-				
-			case 13195:
-				itemDef.name = "200 Credits voucher";
-				itemDef.itemActions = new String[5];
-				itemDef.itemActions[0] = "Redeem";
-				itemDef.modelID = 29210;
-				itemDef.modelZoom = 2300;
-				itemDef.modelRotationY = 512;
-				itemDef.modelOffset1 = 3;
-				itemDef.modelOffset2 = 1;
-				break;
-				
-			case 13196:
-				itemDef.name = "500 Credits voucher";
-				itemDef.itemActions = new String[5];
-				itemDef.itemActions[0] = "Redeem";
-				itemDef.modelID = 29210;
-				itemDef.modelZoom = 2300;
-				itemDef.modelRotationY = 512;
-				itemDef.modelOffset1 = 3;
-				itemDef.modelOffset2 = 1;
-				break;
-				
-			case 13197:
-				itemDef.name = "1,000 Credits voucher";
-				itemDef.itemActions = new String[5];
-				itemDef.itemActions[0] = "Redeem";
-				itemDef.modelID = 29210;
-				itemDef.modelZoom = 2300;
-				itemDef.modelRotationY = 512;
-				itemDef.modelOffset1 = 3;
-				itemDef.modelOffset2 = 1;
-				break;
-				
-			case 13198:
-				itemDef.name = "2,000 Credits voucher";
-				itemDef.itemActions = new String[5];
-				itemDef.itemActions[0] = "Redeem";
-				itemDef.modelID = 29210;
-				itemDef.modelZoom = 2300;
-				itemDef.modelRotationY = 512;
-				itemDef.modelOffset1 = 3;
-				itemDef.modelOffset2 = 1;
-				break;
-			
-		case 995://Money
+
+		case 13190:
+			itemDef.name = "10 Credits voucher";
+			itemDef.itemActions = new String[5];
+			itemDef.itemActions[0] = "Redeem";
+			itemDef.modelID = 29210;
+			itemDef.modelZoom = 2300;
+			itemDef.modelRotationY = 512;
+			itemDef.modelOffset1 = 3;
+			itemDef.modelOffset2 = 1;
+			break;
+
+		case 13191:
+			itemDef.name = "30 Credits voucher";
+			itemDef.itemActions = new String[5];
+			itemDef.itemActions[0] = "Redeem";
+			itemDef.modelID = 29210;
+			itemDef.modelZoom = 2300;
+			itemDef.modelRotationY = 512;
+			itemDef.modelOffset1 = 3;
+			itemDef.modelOffset2 = 1;
+			break;
+
+		case 13192:
+			itemDef.name = "50 Credits voucher";
+			itemDef.itemActions = new String[5];
+			itemDef.itemActions[0] = "Redeem";
+			itemDef.modelID = 29210;
+			itemDef.modelZoom = 2300;
+			itemDef.modelRotationY = 512;
+			itemDef.modelOffset1 = 3;
+			itemDef.modelOffset2 = 1;
+			break;
+
+		case 13193:
+			itemDef.name = "80 Credits voucher";
+			itemDef.itemActions = new String[5];
+			itemDef.itemActions[0] = "Redeem";
+			itemDef.modelID = 29210;
+			itemDef.modelZoom = 2300;
+			itemDef.modelRotationY = 512;
+			itemDef.modelOffset1 = 3;
+			itemDef.modelOffset2 = 1;
+			break;
+
+		case 13194:
+			itemDef.name = "100 Credits voucher";
+			itemDef.itemActions = new String[5];
+			itemDef.itemActions[0] = "Redeem";
+			itemDef.modelID = 29210;
+			itemDef.modelZoom = 2300;
+			itemDef.modelRotationY = 512;
+			itemDef.modelOffset1 = 3;
+			itemDef.modelOffset2 = 1;
+			itemDef.stackable = false;
+			break;
+
+		case 13195:
+			itemDef.name = "200 Credits voucher";
+			itemDef.itemActions = new String[5];
+			itemDef.itemActions[0] = "Redeem";
+			itemDef.modelID = 29210;
+			itemDef.modelZoom = 2300;
+			itemDef.modelRotationY = 512;
+			itemDef.modelOffset1 = 3;
+			itemDef.modelOffset2 = 1;
+			break;
+
+		case 13196:
+			itemDef.name = "500 Credits voucher";
+			itemDef.itemActions = new String[5];
+			itemDef.itemActions[0] = "Redeem";
+			itemDef.modelID = 29210;
+			itemDef.modelZoom = 2300;
+			itemDef.modelRotationY = 512;
+			itemDef.modelOffset1 = 3;
+			itemDef.modelOffset2 = 1;
+			break;
+
+		case 13197:
+			itemDef.name = "1,000 Credits voucher";
+			itemDef.itemActions = new String[5];
+			itemDef.itemActions[0] = "Redeem";
+			itemDef.modelID = 29210;
+			itemDef.modelZoom = 2300;
+			itemDef.modelRotationY = 512;
+			itemDef.modelOffset1 = 3;
+			itemDef.modelOffset2 = 1;
+			break;
+
+		case 13198:
+			itemDef.name = "2,000 Credits voucher";
+			itemDef.itemActions = new String[5];
+			itemDef.itemActions[0] = "Redeem";
+			itemDef.modelID = 29210;
+			itemDef.modelZoom = 2300;
+			itemDef.modelRotationY = 512;
+			itemDef.modelOffset1 = 3;
+			itemDef.modelOffset2 = 1;
+			break;
+
+		case 995:// Money
 			itemDef.name = "Coins";
 			itemDef.itemActions = new String[5];
 			itemDef.itemActions[4] = "Drop";
-			itemDef.itemActions[3] = "Add-to-pouch";				
+			itemDef.itemActions[3] = "Add-to-pouch";
 			break;
-		
-		case 4155://Gem
+
+		case 4155:// Gem
 			itemDef.name = "Slayer gem";
 			itemDef.itemActions = new String[5];
 			itemDef.itemActions[0] = "Check-task";
 			break;
-		
-		case 2568://Ring of forging
+
+		case 2568:// Ring of forging
 			itemDef.itemActions[2] = "Check charges";
 			break;
-			
+
 		case 13188:// Dragon claws
 			break;
-			
-		case 12690://Armour sets
+
+		case 12690:// Armour sets
 		case 12962:
 		case 12972:
 		case 12974:
@@ -194,34 +192,33 @@ public final class ItemDef {
 		case 13173:
 		case 13175:
 			itemDef.itemActions[0] = "Unpack";
-			break;	
-			
+			break;
+
 		case 6828:
 			itemDef.name = "Armour set 1";
 			itemDef.itemActions[0] = "Unpack";
-			break;	
-			
+			break;
+
 		case 6829:
 			itemDef.name = "Armour set 2";
 			itemDef.itemActions[0] = "Unpack";
-			break;	
-			
+			break;
+
 		case 6830:
 			itemDef.name = "Armour set 3";
 			itemDef.itemActions[0] = "Unpack";
-			break;	
-			
+			break;
+
 		case 6831:
 			itemDef.name = "Armour set 4";
 			itemDef.itemActions[0] = "Unpack";
-			break;	
+			break;
 		}
-		
+
 		if (itemDef.certTemplateID != -1)
 			itemDef.toNote();
 		return itemDef;
 	}
-
 
 	public static void nullLoader() {
 		mruNodes2 = null;
@@ -252,7 +249,7 @@ public final class ItemDef {
 		stream = new Stream(archive.getDataForName("obj.dat"));
 		Stream stream = new Stream(archive.getDataForName("obj.idx"));
 		totalItems = stream.readUnsignedWord() + 21;
-		System.out.println("Items Loaded: "+totalItems);
+		System.out.println("Items Loaded: " + totalItems);
 		streamIndices = new int[totalItems + 50000];
 		int i = 2;
 		for (int j = 0; j < totalItems - 21; j++) {
@@ -283,8 +280,7 @@ public final class ItemDef {
 		}
 		if (modifiedModelColors != null) {
 			for (int i1 = 0; i1 < modifiedModelColors.length; i1++)
-				model.method476(modifiedModelColors[i1],
-						originalModelColors[i1]);
+				model.method476(modifiedModelColors[i1], originalModelColors[i1]);
 
 		}
 		return model;
@@ -387,7 +383,6 @@ public final class ItemDef {
 		team = 0;
 	}
 
-
 	private void toNote() {
 		ItemDef itemDef = forID(certTemplateID);
 		modelID = itemDef.modelID;
@@ -411,28 +406,28 @@ public final class ItemDef {
 		description = ("Swap this note at any bank for " + s + " " + itemDef_1.name + ".").getBytes();
 		stackable = true;
 	}
-	
+
 	public static Sprite getSprite(int id, int size, int color, int zoom) {
 		if (id == 0) {
 			return Client.cacheSprite[326];
 		}
 		ItemDef item = forID(id);
-		if(item.stackIDs == null) {
+		if (item.stackIDs == null) {
 			size = -1;
 		}
-		if(size > 1) {
+		if (size > 1) {
 			int i1 = -1;
-			for(int j1 = 0; j1 < 10; j1++) {
-				if(size >= item.stackAmounts[j1] && item.stackAmounts[j1] != 0) {
+			for (int j1 = 0; j1 < 10; j1++) {
+				if (size >= item.stackAmounts[j1] && item.stackAmounts[j1] != 0) {
 					i1 = item.stackIDs[j1];
 				}
 			}
-			if(i1 != -1) {
+			if (i1 != -1) {
 				item = forID(i1);
 			}
 		}
 		Model model = item.method201(1);
-		if(model == null)
+		if (model == null)
 			return null;
 		Sprite image = new Sprite(32, 32);
 		int k1 = Rasterizer.centerX;
@@ -447,17 +442,19 @@ public final class ItemDef {
 		int i3 = DrawingArea.topY;
 		int j3 = DrawingArea.bottomY;
 		Rasterizer.aBoolean1464 = false;
-		DrawingArea.initDrawingArea(32, 32, image.myPixels, new float[32*32]);
+		DrawingArea.initDrawingArea(32, 32, image.myPixels, new float[32 * 32]);
 		DrawingArea.drawPixels(32, 0, 0, 0, 32);
 		Rasterizer.method364();
 		int itemZoom = item.modelZoom * zoom - 500;
 		int l3 = Rasterizer.anIntArray1470[item.modelRotationY] * itemZoom >> 16;
 		int i4 = Rasterizer.anIntArray1471[item.modelRotationY] * itemZoom >> 16;
-		model.method482(item.modelRotationX, item.anInt204, item.modelRotationY, item.modelOffset1, l3 + model.modelHeight / 2 + item.modelOffset2, i4 + item.modelOffset2);
-		if(color == 0) {
-			for(int index = 31; index >= 0; index--) {
-				for(int index2 = 31; index2 >= 0; index2--)
-					if(image.myPixels[index + index2 * 32] == 0 && index > 0 && index2 > 0 && image.myPixels[(index - 1) + (index2 - 1) * 32] > 0)
+		model.method482(item.modelRotationX, item.anInt204, item.modelRotationY, item.modelOffset1,
+				l3 + model.modelHeight / 2 + item.modelOffset2, i4 + item.modelOffset2);
+		if (color == 0) {
+			for (int index = 31; index >= 0; index--) {
+				for (int index2 = 31; index2 >= 0; index2--)
+					if (image.myPixels[index + index2 * 32] == 0 && index > 0 && index2 > 0
+							&& image.myPixels[(index - 1) + (index2 - 1) * 32] > 0)
 						image.myPixels[index + index2 * 32] = 0x302020;
 			}
 		}
@@ -476,12 +473,12 @@ public final class ItemDef {
 
 		return image;
 	}
-	
+
 	public static Sprite getSprite(int i, int j, int k) {
 		if (k == 0) {
 			Sprite sprite = (Sprite) mruNodes1.insertFromCache(i);
 			if (sprite != null && sprite.anInt1445 != j && sprite.anInt1445 != -1) {
-				
+
 				sprite.unlink();
 				sprite = null;
 			}
@@ -495,8 +492,7 @@ public final class ItemDef {
 		if (j > 1) {
 			int i1 = -1;
 			for (int j1 = 0; j1 < 10; j1++)
-				if (j >= itemDef.stackAmounts[j1]
-						&& itemDef.stackAmounts[j1] != 0)
+				if (j >= itemDef.stackAmounts[j1] && itemDef.stackAmounts[j1] != 0)
 					i1 = itemDef.stackIDs[j1];
 
 			if (i1 != -1)
@@ -524,7 +520,7 @@ public final class ItemDef {
 		int i3 = DrawingArea.topY;
 		int j3 = DrawingArea.bottomY;
 		Rasterizer.aBoolean1464 = false;
-		DrawingArea.initDrawingArea(32, 32, enabledSprite.myPixels, new float[32*32]);
+		DrawingArea.initDrawingArea(32, 32, enabledSprite.myPixels, new float[32 * 32]);
 		DrawingArea.method336(32, 0, 0, 0, 32);
 		Rasterizer.method364();
 		int k3 = itemDef.modelZoom;
@@ -534,24 +530,18 @@ public final class ItemDef {
 			k3 = (int) ((double) k3 * 1.04D);
 		int l3 = Rasterizer.anIntArray1470[itemDef.modelRotationY] * k3 >> 16;
 		int i4 = Rasterizer.anIntArray1471[itemDef.modelRotationY] * k3 >> 16;
-		model.method482(itemDef.modelRotationX, itemDef.anInt204,
-				itemDef.modelRotationY, itemDef.modelOffset1, l3
-						+ model.modelHeight / 2 + itemDef.modelOffset2, i4
-						+ itemDef.modelOffset2);
+		model.method482(itemDef.modelRotationX, itemDef.anInt204, itemDef.modelRotationY, itemDef.modelOffset1,
+				l3 + model.modelHeight / 2 + itemDef.modelOffset2, i4 + itemDef.modelOffset2);
 		for (int i5 = 31; i5 >= 0; i5--) {
 			for (int j4 = 31; j4 >= 0; j4--)
 				if (enabledSprite.myPixels[i5 + j4 * 32] == 0)
-					if (i5 > 0
-							&& enabledSprite.myPixels[(i5 - 1) + j4 * 32] > 1)
+					if (i5 > 0 && enabledSprite.myPixels[(i5 - 1) + j4 * 32] > 1)
 						enabledSprite.myPixels[i5 + j4 * 32] = 1;
-					else if (j4 > 0
-							&& enabledSprite.myPixels[i5 + (j4 - 1) * 32] > 1)
+					else if (j4 > 0 && enabledSprite.myPixels[i5 + (j4 - 1) * 32] > 1)
 						enabledSprite.myPixels[i5 + j4 * 32] = 1;
-					else if (i5 < 31
-							&& enabledSprite.myPixels[i5 + 1 + j4 * 32] > 1)
+					else if (i5 < 31 && enabledSprite.myPixels[i5 + 1 + j4 * 32] > 1)
 						enabledSprite.myPixels[i5 + j4 * 32] = 1;
-					else if (j4 < 31
-							&& enabledSprite.myPixels[i5 + (j4 + 1) * 32] > 1)
+					else if (j4 < 31 && enabledSprite.myPixels[i5 + (j4 + 1) * 32] > 1)
 						enabledSprite.myPixels[i5 + j4 * 32] = 1;
 
 		}
@@ -560,17 +550,13 @@ public final class ItemDef {
 			for (int j5 = 31; j5 >= 0; j5--) {
 				for (int k4 = 31; k4 >= 0; k4--)
 					if (enabledSprite.myPixels[j5 + k4 * 32] == 0)
-						if (j5 > 0
-								&& enabledSprite.myPixels[(j5 - 1) + k4 * 32] == 1)
+						if (j5 > 0 && enabledSprite.myPixels[(j5 - 1) + k4 * 32] == 1)
 							enabledSprite.myPixels[j5 + k4 * 32] = k;
-						else if (k4 > 0
-								&& enabledSprite.myPixels[j5 + (k4 - 1) * 32] == 1)
+						else if (k4 > 0 && enabledSprite.myPixels[j5 + (k4 - 1) * 32] == 1)
 							enabledSprite.myPixels[j5 + k4 * 32] = k;
-						else if (j5 < 31
-								&& enabledSprite.myPixels[j5 + 1 + k4 * 32] == 1)
+						else if (j5 < 31 && enabledSprite.myPixels[j5 + 1 + k4 * 32] == 1)
 							enabledSprite.myPixels[j5 + k4 * 32] = k;
-						else if (k4 < 31
-								&& enabledSprite.myPixels[j5 + (k4 + 1) * 32] == 1)
+						else if (k4 < 31 && enabledSprite.myPixels[j5 + (k4 + 1) * 32] == 1)
 							enabledSprite.myPixels[j5 + k4 * 32] = k;
 
 			}
@@ -578,9 +564,7 @@ public final class ItemDef {
 		} else if (k == 0) {
 			for (int k5 = 31; k5 >= 0; k5--) {
 				for (int l4 = 31; l4 >= 0; l4--)
-					if (enabledSprite.myPixels[k5 + l4 * 32] == 0
-							&& k5 > 0
-							&& l4 > 0
+					if (enabledSprite.myPixels[k5 + l4 * 32] == 0 && k5 > 0 && l4 > 0
 							&& enabledSprite.myPixels[(k5 - 1) + (l4 - 1) * 32] > 0)
 						enabledSprite.myPixels[k5 + l4 * 32] = 0x302020;
 
@@ -744,9 +728,9 @@ public final class ItemDef {
 				certTemplateID = stream.readUnsignedWord();
 			else if (i == 100) {
 				int length = stream.readUnsignedByte();
-				stackIDs = new int [length];
+				stackIDs = new int[length];
 				stackAmounts = new int[length];
-				for (int i2 = 0; i2< length; i2++) {
+				for (int i2 = 0; i2 < length; i2++) {
 					stackIDs[i2] = stream.readUnsignedWord();
 					stackAmounts[i2] = stream.readUnsignedWord();
 				}

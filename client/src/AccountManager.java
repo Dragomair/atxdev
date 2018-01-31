@@ -5,21 +5,21 @@ import java.util.*;
  * 
  * @author Zion
  * 
- * This class manages all stored accounts
+ *         This class manages all stored accounts
  * 
  */
 public class AccountManager {
-	
+
 	/**
 	 * Account file save location
 	 */
 	private static File saveAccountFile = new File(Signlink.findcachedir() + "/accounts.dat");
-	
+
 	/**
 	 * Stores the accounts
 	 */
 	public static List<AccountData> accounts = new LinkedList<AccountData>();
-	
+
 	/**
 	 * Gets all the stored accounts in the map
 	 * 
@@ -28,7 +28,7 @@ public class AccountManager {
 	public static List<AccountData> getAccounts() {
 		return accounts;
 	}
-	
+
 	/**
 	 * Gets account for specified name
 	 * 
@@ -43,9 +43,9 @@ public class AccountManager {
 		}
 		return null;
 	}
-	
+
 	/**
-	 *	Adds the account to the account map
+	 * Adds the account to the account map
 	 *
 	 * @param account
 	 */
@@ -59,13 +59,14 @@ public class AccountManager {
 				}
 			}
 		}
-		if (account.username == null && account.username.length() <= 0 || account.password == null && account.password.length() <= 0) {
+		if (account.username == null && account.username.length() <= 0
+				|| account.password == null && account.password.length() <= 0) {
 			return;
 		}
 		accounts.add(account);
 		saveAccount();
 	}
-	
+
 	/**
 	 * Clears the account map
 	 */
@@ -73,7 +74,7 @@ public class AccountManager {
 		accounts.clear();
 		saveAccount();
 	}
-	
+
 	/**
 	 * Removes a desired account from the <accounts> map
 	 * 
@@ -86,7 +87,7 @@ public class AccountManager {
 		accounts.remove(account);
 		saveAccount();
 	}
-	
+
 	/**
 	 * Saves the account
 	 */
@@ -109,7 +110,7 @@ public class AccountManager {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
 	 * Loads the account
 	 */
@@ -129,7 +130,7 @@ public class AccountManager {
 				accounts.add(account);
 			}
 			input.close();
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
